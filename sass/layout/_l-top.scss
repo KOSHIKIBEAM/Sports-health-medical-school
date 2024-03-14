@@ -3,6 +3,32 @@
 .l-top {
   color: #fff;
   text-align: center;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/top/bg.png) no-repeat center center/cover;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    width: 223px;
+    height: 139px;
+    transform: translate(-50%, -50%);
+  }
+  &::before {
+    background: url(/img/top/top-fukidsahi1.png) no-repeat center center/contain;
+    left: 19%;
+  }
+
+  &::after {
+    background: url(/img/top/top-fukidsahi2.png) no-repeat center center/contain;
+    right: 1%;
+  }
 
   &__txt {
     text-align: center;
@@ -11,6 +37,8 @@
     padding: 10px;
     display: inline-block;
     margin: 0 auto 24px;
+    font-size: 25px;
+    letter-spacing: -0.05em;
     border-radius: 17px;
   }
 }
@@ -44,9 +72,12 @@
   &-bg-pink {
     background: #ff70b0;
   }
+  &-circle-wrap {
+  }
   &-circle {
     padding: 16px;
     background: #000;
     border-radius: 50%;
+    margin: 0 -16px;
   }
 }
