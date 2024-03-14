@@ -1,0 +1,64 @@
+.u_fw-bold {
+  font-weight: 700;
+}
+
+.u_fz-lg {
+  font-size: 1.4em;
+}
+
+.u_fc_blue {
+  color: #0a58ca;
+}
+
+.u_fc_red {
+  color: red;
+}
+
+.u_fc_yellow {
+  color: #f1991d;
+  font-weight: 700;
+}
+
+.u_ff_ZenOldMincho {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.u_text-link {
+  color: #f1991d;
+  text-decoration: underline;
+  transition: 0.5s;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.u_text-link-bl {
+  color: #0a58ca;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: 0.3s;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.u_text-link-b {
+  font-weight: 700;
+  text-decoration: underline;
+  transition: 0.5s;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.fontplus-trial-banner {
+  display: none;
+}

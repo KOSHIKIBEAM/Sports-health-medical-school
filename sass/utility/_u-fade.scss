@@ -1,0 +1,129 @@
+@use "../global" as global;
+
+.u-fade-in-longup {
+  opacity: 0;
+  transform: translateY(250px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.u-fade-in-longdown {
+  opacity: 0;
+  transform: translateY(-250px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.u-fade-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.u-fade-in-down {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.u-fade-in-longright {
+  opacity: 0;
+  transform: translateX(250px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.u-fade-in-longleft {
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.u-fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.u-fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.u-delay_01 {
+  transition-delay: 0.1s;
+}
+.u-delay_02 {
+  transition-delay: 0.2s;
+}
+.u-delay_03 {
+  transition-delay: 0.3s;
+}
+.u-delay_04 {
+  transition-delay: 0.4s;
+}
+.u-delay_05 {
+  transition-delay: 0.5s;
+}
+.u-delay_06 {
+  transition-delay: 0.6s;
+}
+.u-delay_07 {
+  transition-delay: 0.7s;
+}
+.u-delay_09 {
+  transition-delay: 0.9s;
+}
+.u-delay_1 {
+  transition-delay: 1s;
+}
+.u-delay_12 {
+  transition-delay: 1.2s;
+}
+.u-delay_14 {
+  transition-delay: 1.4s;
+}
+.u-delay_2 {
+  transition-delay: 2s;
+}
+.u-delay_3 {
+  transition-delay: 3s;
+}
+.u-delay_4 {
+  transition-delay: 4s;
+}
+.u-delay_5 {
+  transition-delay: 5s;
+}

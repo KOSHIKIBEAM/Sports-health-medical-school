@@ -1,0 +1,51 @@
+// 色
+$main-color: #192f60; // メインカラー
+$bg-color: #5cc4ff; // bgカラー
+$accent-color: #fff; // アクセントカラー
+$text-color: #333333; // テキストカラー
+$txt-color2D: #2d2d2d; // テキストカラー
+$btn-color: #20868a; // ボタンカラー
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+// フォント
+$ff-awesome: "heisei-kaku-gothic-std", sans-serif; // Font Awesome
+$ff-quicksand: "Quicksand", sans-serif; // Font Awesome
+$ff-en: "NHaasGroteskTXPro-55Rg", "NHaasGroteskTXPro-65Md",
+  "NHaasGroteskTXPro-75Bd", sans-serif; // 英字
+$ff-base: "heisei-kaku-gothic-std", sans-serif; // 日本語標準
+$fz-base: 16px; // ベースフォントサイズ
+$fw-base: 500; // ベースフォントウェイト
+$lh-base: 1.6; // ベース行間
+$inner-width: 1100px; // インナー幅サイズ
+
+$tab-minwidth: 600px; // tabサイズ
+$pc-minwidth: 1024px; // pcサイズ
+
+// ブレークポイント
+$breakpoints: (
+  // スマホ以下の場合
+  "sp": "screen and (max-width: #{$tab-minwidth - 1px})",
+  // タブレット以上の場合
+  "tab":
+    "screen and (min-width: #{$tab-minwidth}) and (max-width: #{$pc-minwidth - 1px})",
+  // pc以上の場合
+  "pc": "screen and (min-width: #{$pc-minwidth})"
+);
+
+// 重なり順の定義
+$layer: (
+  // ローディング
+  loading: 300,
+  // モーダル
+  modal: 100,
+  // ドロワー
+  drawer: 40,
+  // フローティング
+  floating: 30,
+  // ヘッダー
+  header: 20,
+  // フッター
+  footer: 10,
+  default: 1
+);

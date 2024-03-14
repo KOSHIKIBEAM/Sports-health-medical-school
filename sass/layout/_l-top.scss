@@ -1,0 +1,52 @@
+@use "../global" as global;
+
+.l-top {
+  color: #fff;
+  text-align: center;
+
+  &__txt {
+    text-align: center;
+    color: #1cadff;
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto 24px;
+    border-radius: 17px;
+  }
+}
+.l-top__ttl {
+  text-align: center;
+  font-size: 35px;
+
+  &-newline {
+    display: block;
+
+    &:nth-child(2) {
+      font-size: 66px;
+    }
+  }
+  &-bg-blue {
+    font-size: 48px;
+    background: #0d7cc4;
+    padding: 6px 11px 8px;
+  }
+  &-txt-small {
+    font-size: 26px;
+  }
+  &-bg-pink,
+  &-bg-blue {
+    font-size: 48px;
+    padding: 6px 11px 8px;
+  }
+  &-bg-blue {
+    background: #0d7cc4;
+  }
+  &-bg-pink {
+    background: #ff70b0;
+  }
+  &-circle {
+    padding: 16px;
+    background: #000;
+    border-radius: 50%;
+  }
+}
