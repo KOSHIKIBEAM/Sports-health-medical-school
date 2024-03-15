@@ -5,12 +5,18 @@
   height: 168px;
   position: relative;
 
-  .person1 {
+  .person1,
+  .person2 {
     position: absolute;
     bottom: 11%;
-    left: 80%;
     transform: translate(-50%, 0%);
     width: 157px;
     height: 192px;
+  }
+  .person1 {
+    left: 80%;
+  }
+  .person2 {
+    left: 20%;
   }
 }
