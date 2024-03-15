@@ -1,0 +1,151 @@
+@use "../global" as global;
+
+.p-number {
+  background: #fff;
+  width: 100%;
+  margin-top: 42px;
+  border-radius: 20px;
+  @include global.mq("pc") {
+    padding: 60px 50px;
+  }
+
+  h3 {
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+
+  .p-number__items {
+    @include global.mq("pc") {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    @include global.mq("tab") {
+      flex-direction: column;
+    }
+  }
+}
+
+.p-number__item-vocational,
+.p-number__item-university,
+.p-number__item {
+  text-align: center;
+
+  @include global.mq("pc") {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.p-number__item-vocational,
+.p-number__item-university {
+  .p-number__item-ttl {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin-bottom: 82px;
+  }
+
+  .p-number__item-data-wrap {
+    &:nth-child(3) {
+      @include global.mq("pc") {
+        margin: 95px 0 115px;
+      }
+    }
+  }
+  .p-number__item-data {
+    font-size: 90px;
+    font-weight: bold;
+    line-height: calc(108 / 90);
+
+    span {
+      font-size: 60px;
+      line-height: calc(72 / 60);
+    }
+  }
+  .p-number__item-quote {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.p-number__item-vocational {
+  .p-number__item-ttl {
+    background: #ff70b0;
+  }
+  .p-number__item-data {
+    color: #ff70b0;
+  }
+}
+.p-number__item-university {
+  .p-number__item-ttl {
+    background: #118fd8;
+  }
+  .p-number__item-data {
+    color: #1cadff;
+  }
+}
+.p-number__item {
+  margin: 0 40px;
+
+  .p-number__item-wrap {
+    display: flex;
+
+    @include global.mq("pc") {
+      flex-flow: column;
+      justify-content: space-between;
+    }
+
+    .p-number__item-circle {
+      width: 183px;
+      height: 183px;
+      border-radius: 50%;
+      border: 4px dashed #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        border-right: 4px dashed #000;
+        width: 1px;
+        height: 20px;
+        position: absolute;
+        bottom: -17%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:first-child {
+        margin-top: 89px;
+        position: relative;
+
+        &::after {
+          content: "";
+          border-right: 4px dashed #000;
+          width: 1px;
+          height: 80px;
+          position: absolute;
+          top: -23%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &:nth-child(2) {
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}
