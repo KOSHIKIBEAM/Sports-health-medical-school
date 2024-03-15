@@ -100,6 +100,9 @@ img {
 a {
   color: inherit;
 }
+a:hover {
+  opacity: 0.7;
+}
 
 .l-top {
   color: #fff;
@@ -233,6 +236,16 @@ a {
   margin: 0 auto;
 }
 
+.l-course {
+  padding: 0 0 96px;
+  overflow: hidden;
+}
+.l-course__inner {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .c-section__ttl {
   background: url(/img/common/sectiontitle-bg.png) no-repeat center center/cover;
   width: 100vw;
@@ -242,7 +255,9 @@ a {
 .c-section__ttl .person1,
 .c-section__ttl .person2,
 .c-section__ttl .person3,
-.c-section__ttl .person4 {
+.c-section__ttl .person4,
+.c-section__ttl .person5,
+.c-section__ttl .person6 {
   position: absolute;
   bottom: 11%;
   -webkit-transform: translate(-50%, 0%);
@@ -254,13 +269,19 @@ a {
 .c-section__ttl .person3 {
   left: 80%;
 }
-.c-section__ttl .person2 {
+.c-section__ttl .person2,
+.c-section__ttl .person6 {
   left: 20%;
 }
 .c-section__ttl .person3 {
   bottom: -8%;
   width: 176px;
   height: 181px;
+}
+.c-section__ttl .person5 {
+  width: 135px;
+  height: 184px;
+  left: 85%;
 }
 .c-section__ttl .person4 {
   left: 15%;
@@ -953,6 +974,237 @@ a {
 }
 .p-exam__btn a:last-child {
   margin-right: 0;
+}
+
+.p-course {
+  width: 100%;
+  margin-top: 42px;
+  border-radius: 20px;
+  text-align: center;
+}
+.p-course__ttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.p-course h3 {
+  font-size: 25px;
+  display: inline-block;
+  padding: 12px 40px;
+  background: #ff70b0;
+  border-radius: 27px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.p-course h4 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 53px;
+  position: relative;
+  display: inline-block;
+}
+.p-course h4::before, .p-course h4::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25px;
+  height: 41px;
+}
+.p-course h4::before {
+  left: -11%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  border-left: 4px solid #fff;
+}
+.p-course h4::after {
+  right: -11%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  border-right: 4px solid #fff;
+}
+.p-course__items {
+  margin-top: 73px;
+}
+
+.p-course__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 386px;
+  margin-bottom: 93px;
+}
+.p-course__item:last-child {
+  margin-bottom: 0;
+}
+.p-course__item-body {
+  background: #fff;
+  border-radius: 20px 0 0 20px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.p-course__item-ttl {
+  font-size: 30px;
+  color: #ff70b0;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+.p-course__item-txt {
+  font-size: 16px;
+  line-height: 1.875;
+}
+.p-course__item-img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 487px;
+  height: 386px;
+}
+.p-course__item-img img {
+  width: 487px;
+  height: 386px;
+}
+
+.p-course__item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.p-course__item:nth-child(2n) .p-course__item-body {
+  border-radius: 0px 20px 20px 0px;
+  padding: 75px 42px 32px;
+}
+
+.p-course__item:nth-child(1) .p-course__item-body {
+  padding: 88px 52px 32px;
+}
+.p-course__item:nth-child(1) .p-course__item-ttl {
+  color: #ff70b0;
+}
+
+.p-course__item:nth-child(2) .p-course__item-body {
+  padding: 92px 42px 32px;
+}
+.p-course__item:nth-child(2) .p-course__item-ttl {
+  color: #118fd8;
+}
+
+.p-course__item:nth-child(3) .p-course__item-body {
+  padding: 96px 52px 32px;
+}
+.p-course__item:nth-child(3) .p-course__item-ttl {
+  color: #ff9b06;
+}
+
+.p-course__item:nth-child(4) .p-course__item-body {
+  padding: 71px 42px 32px;
+}
+.p-course__item:nth-child(4) .p-course__item-ttl {
+  margin-bottom: 14px;
+  color: #ff70b0;
+}
+
+.p-course__item:nth-child(5) .p-course__item-body {
+  padding: 99px 52px 32px;
+}
+.p-course__item:nth-child(5) .p-course__item-ttl {
+  color: #118fd8;
+}
+
+.course1,
+.course2,
+.course3,
+.course4,
+.course5 {
+  position: relative;
+}
+.course1::before,
+.course2::before,
+.course3::before,
+.course4::before,
+.course5::before {
+  width: 104px;
+  height: 124px;
+  content: "";
+  position: absolute;
+  top: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.course1::before {
+  background: url(/img/course/course-1.png) no-repeat center center/cover;
+  left: 8%;
+}
+.course1::after {
+  content: "";
+  background: url(/img/course/back-top-right.png) no-repeat center center/cover;
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  top: -1%;
+  right: -52%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.course2::before {
+  background: url(/img/course/course-2.png) no-repeat center center/cover;
+  right: -2%;
+}
+
+.course3::before {
+  background: url(/img/course/course-3.png) no-repeat center center/cover;
+  left: 8%;
+}
+.course3::after {
+  content: "";
+  background: url(/img/course/back-left.png) no-repeat center center/cover;
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.course4::before {
+  background: url(/img/course/course-4.png) no-repeat center center/cover;
+  right: -2%;
+}
+
+.course5::before {
+  background: url(/img/course/course-5.png) no-repeat center center/cover;
+  left: 8%;
+}
+.course5::after {
+  content: "";
+  background: url(/img/course/back-bottom-right.png) no-repeat center center/cover;
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  top: 26%;
+  right: -45%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .u_fw-bold {
