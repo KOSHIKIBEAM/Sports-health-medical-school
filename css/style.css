@@ -223,6 +223,16 @@ a {
   margin: 0 auto;
 }
 
+.l-exam {
+  padding: 0 0 96px;
+  background: #fff;
+}
+.l-exam__inner {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .c-section__ttl {
   background: url(/img/common/sectiontitle-bg.png) no-repeat center center/cover;
   width: 100vw;
@@ -907,6 +917,42 @@ a {
 }
 .p-diff__vocational p:nth-child(1) {
   background: #ff70b0;
+}
+
+.p-exam {
+  width: 100%;
+  margin-top: 42px;
+  border-radius: 20px;
+  text-align: center;
+}
+.p-exam__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+.p-exam__btn a {
+  display: block;
+  width: 400px;
+  margin-right: 32px;
+  padding: 35px 0px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 54px;
+}
+.p-exam__btn a:last-child {
+  margin-right: 0;
 }
 
 .u_fw-bold {

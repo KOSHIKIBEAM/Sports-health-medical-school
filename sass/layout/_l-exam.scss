@@ -1,0 +1,11 @@
+@use "../global" as global;
+.l-exam {
+  padding: 0 0 96px;
+  background: #fff;
+
+  &__inner {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
