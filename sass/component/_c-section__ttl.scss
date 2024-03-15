@@ -7,7 +7,8 @@
 
   .person1,
   .person2,
-  .person3 {
+  .person3,
+  .person4 {
     position: absolute;
     bottom: 11%;
     transform: translate(-50%, 0%);
@@ -25,5 +26,8 @@
     bottom: -8%;
     width: 176px;
     height: 181px;
+  }
+  .person4 {
+    left: 15%;
   }
 }
