@@ -1,0 +1,233 @@
+@use "../global" as global;
+
+.p-course {
+  width: 100%;
+  margin-top: 42px;
+  border-radius: 20px;
+  text-align: center;
+
+  &__ttl {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 25px;
+    display: inline-block;
+    padding: 12px 40px;
+    background: #ff70b0;
+    border-radius: 27px;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  h4 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 53px;
+    position: relative;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 13%;
+      transform: translate(-50%, -50%);
+      width: 25px;
+      height: 41px;
+    }
+
+    &::before {
+      left: -11%;
+      transform: rotate(-30deg);
+      border-left: 4px solid #fff;
+    }
+    &::after {
+      right: -11%;
+      transform: rotate(30deg);
+      border-right: 4px solid #fff;
+    }
+  }
+
+  &__items {
+    margin-top: 73px;
+  }
+}
+
+.p-course__item {
+  display: flex;
+  height: 386px;
+  margin-bottom: 93px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-body {
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    flex-grow: 1;
+  }
+
+  &-ttl {
+    font-size: 30px;
+    color: #ff70b0;
+    font-weight: bold;
+    margin-bottom: 27px;
+  }
+  &-txt {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+  &-img {
+    flex-shrink: 0;
+    width: 487px;
+    height: 386px;
+    img {
+      width: 487px;
+      height: 386px;
+    }
+  }
+}
+
+.p-course__item:nth-child(2n) {
+  flex-direction: row-reverse;
+
+  .p-course__item-body {
+    border-radius: 0px 20px 20px 0px;
+    padding: 75px 42px 32px;
+  }
+}
+.p-course__item:nth-child(1) {
+  .p-course__item-body {
+    padding: 88px 52px 32px;
+  }
+  .p-course__item-ttl {
+    color: #ff70b0;
+  }
+}
+.p-course__item:nth-child(2) {
+  .p-course__item-body {
+    padding: 92px 42px 32px;
+  }
+  .p-course__item-ttl {
+    color: #118fd8;
+  }
+}
+.p-course__item:nth-child(3) {
+  .p-course__item-body {
+    padding: 96px 52px 32px;
+  }
+  .p-course__item-ttl {
+    color: #ff9b06;
+  }
+}
+.p-course__item:nth-child(4) {
+  .p-course__item-body {
+    padding: 71px 42px 32px;
+  }
+
+  .p-course__item-ttl {
+    margin-bottom: 14px;
+    color: #ff70b0;
+  }
+}
+.p-course__item:nth-child(5) {
+  .p-course__item-body {
+    padding: 99px 52px 32px;
+  }
+  .p-course__item-ttl {
+    color: #118fd8;
+  }
+}
+
+.course1,
+.course2,
+.course3,
+.course4,
+.course5 {
+  position: relative;
+
+  &::before {
+    width: 104px;
+    height: 124px;
+    content: "";
+    position: absolute;
+    top: 0%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.course1 {
+  &::before {
+    background: url(/img/course/course-1.png) no-repeat center center/cover;
+    left: 8%;
+  }
+
+  &::after {
+    content: "";
+    background: url(/img/course/back-top-right.png) no-repeat center
+      center/cover;
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    top: -1%;
+    right: -52%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+}
+.course2 {
+  &::before {
+    background: url(/img/course/course-2.png) no-repeat center center/cover;
+    right: -2%;
+  }
+}
+.course3 {
+  &::before {
+    background: url(/img/course/course-3.png) no-repeat center center/cover;
+    left: 8%;
+  }
+
+  &::after {
+    content: "";
+    background: url(/img/course/back-left.png) no-repeat center center/cover;
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+}
+.course4 {
+  &::before {
+    background: url(/img/course/course-4.png) no-repeat center center/cover;
+    right: -2%;
+  }
+}
+.course5 {
+  &::before {
+    background: url(/img/course/course-5.png) no-repeat center center/cover;
+    left: 8%;
+  }
+
+  &::after {
+    content: "";
+    background: url(/img/course/back-bottom-right.png) no-repeat center
+      center/cover;
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    top: 26%;
+    right: -45%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+}
