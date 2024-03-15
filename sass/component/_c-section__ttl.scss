@@ -6,17 +6,24 @@
   position: relative;
 
   .person1,
-  .person2 {
+  .person2,
+  .person3 {
     position: absolute;
     bottom: 11%;
     transform: translate(-50%, 0%);
     width: 157px;
     height: 192px;
   }
-  .person1 {
+  .person1,
+  .person3 {
     left: 80%;
   }
   .person2 {
     left: 20%;
+  }
+  .person3 {
+    bottom: -8%;
+    width: 176px;
+    height: 181px;
   }
 }
