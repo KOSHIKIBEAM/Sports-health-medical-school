@@ -1,0 +1,178 @@
+@use "../global" as global;
+
+.p-fee {
+  background: #fff;
+  width: 100%;
+  margin-top: 42px;
+  border-radius: 20px;
+  @include global.mq("pc") {
+    padding: 60px 50px;
+  }
+
+  h3 {
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+
+  .p-fee__items {
+    @include global.mq("pc") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include global.mq("tab") {
+      flex-direction: column;
+    }
+  }
+}
+
+.p-fee__item-vocational,
+.p-fee__item-university,
+.p-fee__item {
+  text-align: center;
+
+  @include global.mq("pc") {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.p-fee__item-vocational,
+.p-fee__item-university {
+  .p-fee__item-ttl {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin-bottom: 82px;
+  }
+
+  .p-fee__item-data-wrap {
+    & > p {
+      font-size: 30px;
+    }
+    &:nth-child(3) {
+      @include global.mq("pc") {
+        margin: 95px 0 115px;
+      }
+    }
+  }
+  .p-fee__item-data {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: calc(108 / 90);
+
+    span {
+      font-size: 57px;
+      line-height: calc(72 / 60);
+    }
+  }
+  .p-fee__item-quote {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.p-fee__item-vocational {
+  .p-fee__item-data-wrap {
+    & > p {
+      color: #ff70b0;
+    }
+  }
+  .p-fee__item-ttl {
+    background: #ff70b0;
+  }
+  .p-fee__item-data {
+    color: #ff70b0;
+  }
+}
+.p-fee__item-university {
+  .p-fee__item-data-wrap {
+    & > p {
+      color: #1cadff;
+    }
+  }
+
+  .p-fee__item-ttl {
+    background: #118fd8;
+  }
+  .p-fee__item-data {
+    color: #1cadff;
+  }
+}
+.p-fee__item {
+  margin: 0 40px;
+
+  .p-fee__item-wrap {
+    display: flex;
+
+    @include global.mq("pc") {
+      flex-flow: column;
+      justify-content: space-between;
+    }
+
+    .p-fee__item-circle {
+      width: 183px;
+      height: 183px;
+      border-radius: 50%;
+      border: 4px dashed #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        border-right: 4px dashed #000;
+        width: 1px;
+        height: 310px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &::before {
+        top: 189%;
+      }
+
+      &::after {
+        top: -90%;
+      }
+
+      &:nth-child(2) {
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+}
+.p-fee__txt {
+  background: url(/img/fee/fee-bg.png) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 23px 58px;
+  border-radius: 0 0 20px 20px;
+
+  img {
+    width: 157px;
+    margin-right: 37.5px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: calc(37 / 20);
+    letter-spacing: 0.05em;
+    font-weight: bold;
+  }
+}
