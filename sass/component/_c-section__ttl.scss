@@ -12,12 +12,27 @@
     position: absolute;
     bottom: 11%;
     transform: translate(-50%, 0%);
-    width: 157px;
-    height: 192px;
+    width: 14%;
+
+    @include global.mq("sp") {
+      width: 25%;
+      bottom: 8%;
+    }
+    @media screen and (max-width: 380px) {
+      width: 25%;
+    }
   }
   .person1,
   .person3 {
     left: 80%;
+
+    @include global.mq("sp") {
+      left: 89%;
+    }
+
+    @media screen and (max-width: 380px) {
+      left: 89%;
+    }
   }
   .person2,
   .person6 {
