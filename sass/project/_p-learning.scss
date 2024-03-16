@@ -13,6 +13,13 @@
     position: relative;
     display: inline-block;
 
+    @include global.mq("tab") {
+      font-size: 20px;
+    }
+    @include global.mq("sp") {
+      font-size: 20px;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -21,17 +28,42 @@
       transform: translate(-50%, -50%);
       width: 25px;
       height: 41px;
+
+      @include global.mq("tab") {
+        top: 11%;
+        width: 5px;
+        height: 25px;
+      }
+      @include global.mq("sp") {
+        top: 11%;
+        width: 5px;
+        height: 25px;
+      }
     }
 
     &::before {
       left: -6%;
       transform: rotate(-30deg);
       border-left: 4px solid #000;
+
+      @include global.mq("tab") {
+        border-left: 3px solid #000;
+      }
+      @include global.mq("sp") {
+        border-left: 3px solid #000;
+      }
     }
     &::after {
       right: -6%;
       transform: rotate(30deg);
       border-right: 4px solid #000;
+
+      @include global.mq("tab") {
+        border-right: 3px solid #000;
+      }
+      @include global.mq("sp") {
+        border-right: 3px solid #000;
+      }
     }
   }
 }
@@ -39,6 +71,12 @@
 .p-learning__table {
   @include global.mq("pc") {
     margin-bottom: 93px;
+  }
+  @include global.mq("tab") {
+    margin-bottom: 63px;
+  }
+  @include global.mq("sp") {
+    margin-bottom: 42px;
   }
 
   table {
@@ -77,13 +115,16 @@
   tr:nth-child(1) th:nth-child(3) {
     font-size: 24px;
     font-weight: bold;
+    font-size: 18px;
   }
 
   tr:nth-child(1) th:nth-child(2) {
     background: #ff70b0;
     border-radius: 20px 0 0 0;
+    width: 136px;
   }
   tr:nth-child(1) th:nth-child(3) {
+    width: 136px;
     background: #118fd8;
     border-radius: 0 20px 0 0;
   }
@@ -95,6 +136,21 @@
 
     @include global.mq("pc") {
       width: 250px;
+    }
+
+    @include global.mq("tab") {
+      font-size: 15px;
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      width: 44px;
+    }
+    @include global.mq("sp") {
+      font-size: 15px;
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      width: 44px;
     }
   }
 
@@ -112,16 +168,42 @@
   tr:nth-child(2) td:nth-child(2),
   tr:nth-child(3) td:nth-child(2) {
     background: #ffebf4;
+
+    @include global.mq("tab") {
+      font-size: 13px;
+    }
+    @include global.mq("sp") {
+      font-size: 13px;
+    }
   }
   tr:nth-child(2) td:nth-child(3),
   tr:nth-child(3) td:nth-child(3) {
     background: #ebf8ff;
+
+    @include global.mq("tab") {
+      font-size: 13px;
+    }
+    @include global.mq("sp") {
+      font-size: 13px;
+    }
   }
 
   ul {
-    width: 260px;
+    @include global.mq("pc") {
+      width: 260px;
+    }
     margin: 0 auto;
     text-align: left;
+
+    @include global.mq("tab") {
+      padding-left: 27%;
+    }
+    @include global.mq("sp") {
+      padding-left: 27%;
+    }
+    @media screen and (max-width: 450px) {
+      padding-left: 11%;
+    }
   }
 }
 
@@ -134,10 +216,22 @@
 }
 .p-learning__university,
 .p-learning__vocational {
-  width: calc(50% - 42px * 1 / 2);
-  margin-right: 42px;
   border-radius: 20px;
-  padding: 35px 0 13px;
+
+  @include global.mq("pc") {
+    width: calc(50% - 42px * 1 / 2);
+    padding: 35px 0 13px;
+    margin-right: 42px;
+  }
+
+  @include global.mq("tab") {
+    width: 100%;
+    padding: 20px 25px 10px;
+  }
+  @include global.mq("sp") {
+    width: 100%;
+    padding: 20px 25px 10px;
+  }
 
   p {
     display: inline-block;
@@ -148,6 +242,19 @@
     line-height: calc(36 / 30);
     letter-spacing: 0.05em;
     margin: 0 0 31px;
+
+    @include global.mq("tab") {
+      font-size: 18px;
+      padding: 11px 0px;
+      width: 170px;
+      margin: 0 auto 15px;
+    }
+    @include global.mq("sp") {
+      font-size: 18px;
+      padding: 11px 0px;
+      width: 170px;
+      margin: 0 auto 15px;
+    }
   }
 
   ul {
@@ -155,6 +262,19 @@
     font-size: 20px;
     width: 381px;
     margin: 0 auto;
+
+    @include global.mq("tab") {
+      width: 281px;
+      font-size: 16px;
+    }
+
+    @include global.mq("sp") {
+      font-size: 13px;
+      width: 246px;
+    }
+    @media screen and (max-width: 380px) {
+      width: 181px;
+    }
   }
 
   li {
@@ -170,9 +290,18 @@
   background: #ebf8ff;
 }
 .p-learning__vocational {
+  background: #ffebf4;
+
+  @include global.mq("pc") {
+    margin-right: 42px;
+  }
+  @include global.mq("tab") {
+    margin-bottom: 22px;
+  }
+  @include global.mq("sp") {
+    margin-bottom: 22px;
+  }
   p {
     background: #ff70b0;
   }
-  background: #ffebf4;
-  margin-right: 42px;
 }

@@ -495,15 +495,15 @@ a:hover {
     left: 89%;
   }
 }
-@media screen and (max-width: 380px) {
-  .c-section__ttl .person1,
-  .c-section__ttl .person3 {
-    left: 89%;
-  }
-}
 .c-section__ttl .person2,
 .c-section__ttl .person6 {
   left: 20%;
+}
+@media screen and (max-width: 599px) {
+  .c-section__ttl .person2,
+  .c-section__ttl .person6 {
+    left: 12%;
+  }
 }
 .c-section__ttl .person3 {
   bottom: -8%;
@@ -1008,6 +1008,16 @@ a:hover {
   position: relative;
   display: inline-block;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning h3 {
+    font-size: 20px;
+  }
+}
 .p-learning h3::before, .p-learning h3::after {
   content: "";
   position: absolute;
@@ -1017,11 +1027,35 @@ a:hover {
   width: 25px;
   height: 41px;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning h3::before, .p-learning h3::after {
+    top: 11%;
+    width: 5px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning h3::before, .p-learning h3::after {
+    top: 11%;
+    width: 5px;
+    height: 25px;
+  }
+}
 .p-learning h3::before {
   left: -6%;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
   border-left: 4px solid #000;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning h3::before {
+    border-left: 3px solid #000;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning h3::before {
+    border-left: 3px solid #000;
+  }
 }
 .p-learning h3::after {
   right: -6%;
@@ -1029,10 +1063,30 @@ a:hover {
           transform: rotate(30deg);
   border-right: 4px solid #000;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning h3::after {
+    border-right: 3px solid #000;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning h3::after {
+    border-right: 3px solid #000;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .p-learning__table {
     margin-bottom: 93px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__table {
+    margin-bottom: 63px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__table {
+    margin-bottom: 42px;
   }
 }
 .p-learning__table table {
@@ -1068,12 +1122,15 @@ a:hover {
 .p-learning__table tr:nth-child(1) th:nth-child(3) {
   font-size: 24px;
   font-weight: bold;
+  font-size: 18px;
 }
 .p-learning__table tr:nth-child(1) th:nth-child(2) {
   background: #ff70b0;
   border-radius: 20px 0 0 0;
+  width: 136px;
 }
 .p-learning__table tr:nth-child(1) th:nth-child(3) {
+  width: 136px;
   background: #118fd8;
   border-radius: 0 20px 0 0;
 }
@@ -1086,6 +1143,26 @@ a:hover {
   .p-learning__table tr:nth-child(2) th,
   .p-learning__table tr:nth-child(3) th {
     width: 250px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__table tr:nth-child(2) th,
+  .p-learning__table tr:nth-child(3) th {
+    font-size: 15px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    width: 44px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__table tr:nth-child(2) th,
+  .p-learning__table tr:nth-child(3) th {
+    font-size: 15px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    width: 44px;
   }
 }
 .p-learning__table tr:nth-child(2) td {
@@ -1101,14 +1178,57 @@ a:hover {
 .p-learning__table tr:nth-child(3) td:nth-child(2) {
   background: #ffebf4;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__table tr:nth-child(2) td:nth-child(2),
+  .p-learning__table tr:nth-child(3) td:nth-child(2) {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__table tr:nth-child(2) td:nth-child(2),
+  .p-learning__table tr:nth-child(3) td:nth-child(2) {
+    font-size: 13px;
+  }
+}
 .p-learning__table tr:nth-child(2) td:nth-child(3),
 .p-learning__table tr:nth-child(3) td:nth-child(3) {
   background: #ebf8ff;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__table tr:nth-child(2) td:nth-child(3),
+  .p-learning__table tr:nth-child(3) td:nth-child(3) {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__table tr:nth-child(2) td:nth-child(3),
+  .p-learning__table tr:nth-child(3) td:nth-child(3) {
+    font-size: 13px;
+  }
+}
 .p-learning__table ul {
-  width: 260px;
   margin: 0 auto;
   text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .p-learning__table ul {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__table ul {
+    padding-left: 27%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__table ul {
+    padding-left: 27%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .p-learning__table ul {
+    padding-left: 11%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1127,10 +1247,29 @@ a:hover {
 
 .p-learning__university,
 .p-learning__vocational {
-  width: calc(50% - 21px);
-  margin-right: 42px;
   border-radius: 20px;
-  padding: 35px 0 13px;
+}
+@media screen and (min-width: 1024px) {
+  .p-learning__university,
+  .p-learning__vocational {
+    width: calc(50% - 21px);
+    padding: 35px 0 13px;
+    margin-right: 42px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__university,
+  .p-learning__vocational {
+    width: 100%;
+    padding: 20px 25px 10px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__university,
+  .p-learning__vocational {
+    width: 100%;
+    padding: 20px 25px 10px;
+  }
 }
 .p-learning__university p,
 .p-learning__vocational p {
@@ -1143,12 +1282,50 @@ a:hover {
   letter-spacing: 0.05em;
   margin: 0 0 31px;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__university p,
+  .p-learning__vocational p {
+    font-size: 18px;
+    padding: 11px 0px;
+    width: 170px;
+    margin: 0 auto 15px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__university p,
+  .p-learning__vocational p {
+    font-size: 18px;
+    padding: 11px 0px;
+    width: 170px;
+    margin: 0 auto 15px;
+  }
+}
 .p-learning__university ul,
 .p-learning__vocational ul {
   text-align: left;
   font-size: 20px;
   width: 381px;
   margin: 0 auto;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__university ul,
+  .p-learning__vocational ul {
+    width: 281px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__university ul,
+  .p-learning__vocational ul {
+    font-size: 13px;
+    width: 246px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .p-learning__university ul,
+  .p-learning__vocational ul {
+    width: 181px;
+  }
 }
 .p-learning__university li,
 .p-learning__vocational li {
@@ -1166,7 +1343,21 @@ a:hover {
 
 .p-learning__vocational {
   background: #ffebf4;
-  margin-right: 42px;
+}
+@media screen and (min-width: 1024px) {
+  .p-learning__vocational {
+    margin-right: 42px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-learning__vocational {
+    margin-bottom: 22px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-learning__vocational {
+    margin-bottom: 22px;
+  }
 }
 .p-learning__vocational p {
   background: #ff70b0;

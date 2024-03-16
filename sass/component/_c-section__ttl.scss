@@ -29,14 +29,14 @@
     @include global.mq("sp") {
       left: 89%;
     }
-
-    @media screen and (max-width: 380px) {
-      left: 89%;
-    }
   }
   .person2,
   .person6 {
     left: 20%;
+
+    @include global.mq("sp") {
+      left: 12%;
+    }
   }
   .person3 {
     bottom: -8%;
