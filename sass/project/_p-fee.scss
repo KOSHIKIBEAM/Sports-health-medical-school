@@ -26,6 +26,49 @@
     @include global.mq("tab") {
       flex-direction: column;
     }
+
+    @include global.mq("sp") {
+      padding: 25px;
+    }
+  }
+}
+
+.p-fee__item-fukidashi {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 25px;
+  padding: 10px 0px;
+  width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #fff;
+  border: solid 2px #555;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    margin-left: -16px;
+    border: 13px solid transparent;
+    border-top: 13px solid #fff;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #555;
+    z-index: 1;
+  }
+  p {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -47,11 +90,22 @@
     font-size: 30px;
     letter-spacing: 0.05em;
     margin-bottom: 82px;
+
+    @include global.mq("sp") {
+      margin-bottom: 22px;
+    }
   }
 
   .p-fee__item-data-wrap {
     & > p {
       font-size: 30px;
+
+      @include global.mq("tab") {
+        font-size: 23px;
+      }
+      @include global.mq("sp") {
+        font-size: 18px;
+      }
     }
     &:nth-child(3) {
       @include global.mq("pc") {
@@ -64,9 +118,23 @@
     font-weight: bold;
     line-height: calc(108 / 90);
 
+    @include global.mq("tab") {
+      font-size: 58px;
+    }
+    @include global.mq("sp") {
+      font-size: 58px;
+    }
+
     span {
       font-size: 57px;
       line-height: calc(72 / 60);
+
+      @include global.mq("tab") {
+        font-size: 38px;
+      }
+      @include global.mq("sp") {
+        font-size: 38px;
+      }
     }
   }
   .p-fee__item-quote {
@@ -83,6 +151,10 @@
     & > p {
       color: #ff70b0;
     }
+
+    @include global.mq("sp") {
+      margin-bottom: 40px;
+    }
   }
   .p-fee__item-ttl {
     background: #ff70b0;
@@ -95,6 +167,14 @@
   .p-fee__item-data-wrap {
     & > p {
       color: #1cadff;
+    }
+
+    @include global.mq("sp") {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -164,9 +244,18 @@
   padding: 23px 58px;
   border-radius: 0 0 20px 20px;
 
+  @include global.mq("sp") {
+    padding: 22px 24px 22px 15px;
+  }
+
   img {
     width: 157px;
     margin-right: 37.5px;
+
+    @include global.mq("sp") {
+      width: 84px;
+      margin-right: 10px;
+    }
   }
 
   p {
@@ -174,5 +263,10 @@
     line-height: calc(37 / 20);
     letter-spacing: 0.05em;
     font-weight: bold;
+
+    @include global.mq("sp") {
+      line-height: calc(18 / 13);
+      font-size: 13px;
+    }
   }
 }

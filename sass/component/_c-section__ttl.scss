@@ -42,6 +42,12 @@
     bottom: -8%;
     width: 176px;
     height: 181px;
+
+    @include global.mq("sp") {
+      bottom: 8%;
+      width: 27%;
+      height: 116%;
+    }
   }
   .person5 {
     width: 135px;
