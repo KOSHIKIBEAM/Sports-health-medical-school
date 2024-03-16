@@ -6,5 +6,13 @@
     max-width: 1000px;
     width: 80%;
     margin: 0 auto;
+
+    @include global.mq("sp") {
+      width: 100%;
+      padding: 0 30px;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 0 15px;
+    }
   }
 }
