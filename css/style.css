@@ -510,6 +510,13 @@ a:hover {
   width: 176px;
   height: 181px;
 }
+@media screen and (max-width: 599px) {
+  .c-section__ttl .person3 {
+    bottom: 8%;
+    width: 27%;
+    height: 116%;
+  }
+}
 .c-section__ttl .person5 {
   width: 135px;
   height: 184px;
@@ -1401,6 +1408,49 @@ a:hover {
             flex-direction: column;
   }
 }
+@media screen and (max-width: 599px) {
+  .p-fee .p-fee__items {
+    padding: 25px;
+  }
+}
+
+.p-fee__item-fukidashi {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 25px;
+  padding: 10px 0px;
+  width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #fff;
+  border: solid 2px #555;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.p-fee__item-fukidashi::before {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  margin-left: -16px;
+  border: 13px solid transparent;
+  border-top: 13px solid #fff;
+  z-index: 2;
+}
+.p-fee__item-fukidashi::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #555;
+  z-index: 1;
+}
+.p-fee__item-fukidashi p {
+  margin: 0;
+  padding: 0;
+}
 
 .p-fee__item-vocational,
 .p-fee__item-university,
@@ -1428,9 +1478,27 @@ a:hover {
   letter-spacing: 0.05em;
   margin-bottom: 82px;
 }
+@media screen and (max-width: 599px) {
+  .p-fee__item-vocational .p-fee__item-ttl,
+  .p-fee__item-university .p-fee__item-ttl {
+    margin-bottom: 22px;
+  }
+}
 .p-fee__item-vocational .p-fee__item-data-wrap > p,
 .p-fee__item-university .p-fee__item-data-wrap > p {
   font-size: 30px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-fee__item-vocational .p-fee__item-data-wrap > p,
+  .p-fee__item-university .p-fee__item-data-wrap > p {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-fee__item-vocational .p-fee__item-data-wrap > p,
+  .p-fee__item-university .p-fee__item-data-wrap > p {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .p-fee__item-vocational .p-fee__item-data-wrap:nth-child(3),
@@ -1444,10 +1512,34 @@ a:hover {
   font-weight: bold;
   line-height: 1.2;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-fee__item-vocational .p-fee__item-data,
+  .p-fee__item-university .p-fee__item-data {
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-fee__item-vocational .p-fee__item-data,
+  .p-fee__item-university .p-fee__item-data {
+    font-size: 58px;
+  }
+}
 .p-fee__item-vocational .p-fee__item-data span,
 .p-fee__item-university .p-fee__item-data span {
   font-size: 57px;
   line-height: 1.2;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-fee__item-vocational .p-fee__item-data span,
+  .p-fee__item-university .p-fee__item-data span {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-fee__item-vocational .p-fee__item-data span,
+  .p-fee__item-university .p-fee__item-data span {
+    font-size: 38px;
+  }
 }
 .p-fee__item-vocational .p-fee__item-quote,
 .p-fee__item-university .p-fee__item-quote {
@@ -1462,6 +1554,11 @@ a:hover {
 .p-fee__item-vocational .p-fee__item-data-wrap > p {
   color: #ff70b0;
 }
+@media screen and (max-width: 599px) {
+  .p-fee__item-vocational .p-fee__item-data-wrap {
+    margin-bottom: 40px;
+  }
+}
 .p-fee__item-vocational .p-fee__item-ttl {
   background: #ff70b0;
 }
@@ -1471,6 +1568,14 @@ a:hover {
 
 .p-fee__item-university .p-fee__item-data-wrap > p {
   color: #1cadff;
+}
+@media screen and (max-width: 599px) {
+  .p-fee__item-university .p-fee__item-data-wrap {
+    margin-bottom: 40px;
+  }
+  .p-fee__item-university .p-fee__item-data-wrap:last-child {
+    margin-bottom: 0;
+  }
 }
 .p-fee__item-university .p-fee__item-ttl {
   background: #118fd8;
@@ -1552,15 +1657,32 @@ a:hover {
   padding: 23px 58px;
   border-radius: 0 0 20px 20px;
 }
+@media screen and (max-width: 599px) {
+  .p-fee__txt {
+    padding: 22px 24px 22px 15px;
+  }
+}
 .p-fee__txt img {
   width: 157px;
   margin-right: 37.5px;
+}
+@media screen and (max-width: 599px) {
+  .p-fee__txt img {
+    width: 84px;
+    margin-right: 10px;
+  }
 }
 .p-fee__txt p {
   font-size: 20px;
   line-height: 1.85;
   letter-spacing: 0.05em;
   font-weight: bold;
+}
+@media screen and (max-width: 599px) {
+  .p-fee__txt p {
+    line-height: 1.3846153846;
+    font-size: 13px;
+  }
 }
 
 .p-diff {
