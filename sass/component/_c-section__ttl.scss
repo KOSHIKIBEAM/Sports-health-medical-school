@@ -53,6 +53,12 @@
     width: 135px;
     height: 184px;
     left: 85%;
+
+    @include global.mq("sp") {
+      left: 89%;
+      width: 27%;
+      height: 127%;
+    }
   }
   .person4 {
     left: 15%;

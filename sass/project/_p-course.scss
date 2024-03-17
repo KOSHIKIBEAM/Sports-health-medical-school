@@ -6,6 +6,10 @@
   border-radius: 20px;
   text-align: center;
 
+  @include global.mq("sp") {
+    margin-top: 17px;
+  }
+
   &__ttl {
     display: flex;
     flex-flow: column;
@@ -21,6 +25,13 @@
     border-radius: 27px;
     color: #fff;
     margin-bottom: 32px;
+
+    @include global.mq("sp") {
+      font-size: 15px;
+      min-width: 290px;
+      padding: 12px 0;
+      margin-bottom: 17px;
+    }
   }
 
   h4 {
@@ -30,37 +41,66 @@
     position: relative;
     display: inline-block;
 
+    @include global.mq("sp") {
+      font-size: 23px;
+      margin-bottom: 0;
+    }
+
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 13%;
       transform: translate(-50%, -50%);
-      width: 25px;
-      height: 41px;
+      top: 9%;
+      width: 15px;
+      height: 24px;
+
+      @include global.mq("pc") {
+        top: 13%;
+        width: 25px;
+        height: 41px;
+      }
     }
 
     &::before {
-      left: -11%;
+      left: -9%;
       transform: rotate(-30deg);
-      border-left: 4px solid #fff;
+      border-left: 2px solid #fff;
+
+      @include global.mq("pc") {
+        border-left: 4px solid #fff;
+        left: -11%;
+      }
     }
     &::after {
-      right: -11%;
+      right: -9%;
       transform: rotate(30deg);
-      border-right: 4px solid #fff;
+      border-right: 2px solid #fff;
+
+      @include global.mq("pc") {
+        border-right: 4px solid #fff;
+        right: -11%;
+      }
     }
   }
 
   &__items {
     margin-top: 73px;
+
+    @include global.mq("sp") {
+      margin-top: 58px;
+    }
   }
 }
 
 .p-course__item {
-  display: flex;
-  height: 386px;
-  margin-bottom: 93px;
+  margin-bottom: 70px;
+
+  @include global.mq("pc") {
+    height: 386px;
+    margin-bottom: 93px;
+    display: flex;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -72,6 +112,11 @@
     text-align: left;
     letter-spacing: 0.05em;
     flex-grow: 1;
+
+    @include global.mq("sp") {
+      border-radius: 20px 20px 0 0;
+      padding: 55px 23px 32px;
+    }
   }
 
   &-ttl {
@@ -79,18 +124,32 @@
     color: #ff70b0;
     font-weight: bold;
     margin-bottom: 27px;
+
+    @include global.mq("sp") {
+      font-size: 18px;
+      text-align: center;
+    }
   }
   &-txt {
     font-size: 16px;
     line-height: calc(30 / 16);
+
+    @include global.mq("sp") {
+      font-size: 13px;
+    }
   }
   &-img {
-    flex-shrink: 0;
-    width: 487px;
-    height: 386px;
-    img {
+    @include global.mq("pc") {
+      flex-shrink: 0;
       width: 487px;
       height: 386px;
+    }
+
+    img {
+      @include global.mq("pc") {
+        width: 487px;
+        height: 386px;
+      }
     }
   }
 }
@@ -99,13 +158,17 @@
   flex-direction: row-reverse;
 
   .p-course__item-body {
-    border-radius: 0px 20px 20px 0px;
-    padding: 75px 42px 32px;
+    @include global.mq("pc") {
+      border-radius: 0px 20px 20px 0px;
+      padding: 75px 42px 32px;
+    }
   }
 }
 .p-course__item:nth-child(1) {
   .p-course__item-body {
-    padding: 88px 52px 32px;
+    @include global.mq("pc") {
+      padding: 88px 52px 32px;
+    }
   }
   .p-course__item-ttl {
     color: #ff70b0;
@@ -113,7 +176,9 @@
 }
 .p-course__item:nth-child(2) {
   .p-course__item-body {
-    padding: 92px 42px 32px;
+    @include global.mq("pc") {
+      padding: 92px 42px 32px;
+    }
   }
   .p-course__item-ttl {
     color: #118fd8;
@@ -121,7 +186,9 @@
 }
 .p-course__item:nth-child(3) {
   .p-course__item-body {
-    padding: 96px 52px 32px;
+    @include global.mq("pc") {
+      padding: 96px 52px 32px;
+    }
   }
   .p-course__item-ttl {
     color: #ff9b06;
@@ -129,7 +196,9 @@
 }
 .p-course__item:nth-child(4) {
   .p-course__item-body {
-    padding: 71px 42px 32px;
+    @include global.mq("pc") {
+      padding: 71px 42px 32px;
+    }
   }
 
   .p-course__item-ttl {
@@ -139,7 +208,9 @@
 }
 .p-course__item:nth-child(5) {
   .p-course__item-body {
-    padding: 99px 52px 32px;
+    @include global.mq("pc") {
+      padding: 99px 52px 32px;
+    }
   }
   .p-course__item-ttl {
     color: #118fd8;
@@ -160,13 +231,23 @@
     position: absolute;
     top: 0%;
     transform: translate(-50%, -50%);
+
+    @include global.mq("sp") {
+      width: 61px;
+      height: 73px;
+    }
   }
 }
 
 .course1 {
   &::before {
     background: url(/img/course/course-1.png) no-repeat center center/cover;
-    left: 8%;
+
+    left: 50%;
+
+    @include global.mq("pc") {
+      left: 8%;
+    }
   }
 
   &::after {
@@ -180,54 +261,83 @@
     right: -52%;
     z-index: -1;
     transform: translate(-50%, -50%);
+    content: none;
+
+    @include global.mq("pc") {
+      content: "";
+    }
   }
 }
 .course2 {
   &::before {
     background: url(/img/course/course-2.png) no-repeat center center/cover;
-    right: -2%;
+
+    @include global.mq("pc") {
+      right: -2%;
+    }
   }
 }
 .course3 {
   &::before {
     background: url(/img/course/course-3.png) no-repeat center center/cover;
-    left: 8%;
+    left: 50%;
+
+    @include global.mq("pc") {
+      left: 8%;
+    }
   }
 
   &::after {
     content: "";
     background: url(/img/course/back-left.png) no-repeat center center/cover;
-    width: 550px;
-    height: 500px;
+    width: 269px;
+    height: 245px;
     position: absolute;
     top: 50%;
     left: 0%;
     z-index: -1;
     transform: translate(-50%, -50%);
+
+    @include global.mq("pc") {
+      width: 550px;
+      height: 500px;
+    }
   }
 }
 .course4 {
   &::before {
     background: url(/img/course/course-4.png) no-repeat center center/cover;
-    right: -2%;
+
+    @include global.mq("pc") {
+      right: -2%;
+    }
   }
 }
 .course5 {
   &::before {
     background: url(/img/course/course-5.png) no-repeat center center/cover;
-    left: 8%;
+    left: 50%;
+
+    @include global.mq("pc") {
+      left: 8%;
+    }
   }
 
   &::after {
     content: "";
     background: url(/img/course/back-bottom-right.png) no-repeat center
       center/cover;
-    width: 550px;
-    height: 500px;
+    width: 269px;
+    height: 245px;
     position: absolute;
-    top: 26%;
-    right: -45%;
+    top: 110%;
+    right: -83%;
     z-index: -1;
     transform: translate(-50%, -50%);
+
+    @include global.mq("pc") {
+      width: 550px;
+      height: 500px;
+    }
   }
 }
