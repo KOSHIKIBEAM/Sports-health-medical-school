@@ -67,4 +67,11 @@
       left: 10%;
     }
   }
+  .person6 {
+    @include global.mq("sp") {
+      width: 27%;
+      height: 116%;
+      bottom: 2%;
+    }
+  }
 }

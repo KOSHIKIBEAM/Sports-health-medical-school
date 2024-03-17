@@ -6,11 +6,31 @@
   border-radius: 20px;
   text-align: center;
 
+  @include global.mq("tab") {
+    margin-top: 29px;
+  }
+
+  @include global.mq("sp") {
+    margin-top: 29px;
+  }
+
   &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 65px;
+    display: flex;
+    justify-content: center;
+
+    @include global.mq("pc") {
+      align-items: center;
+    }
+
+    @include global.mq("tab") {
+      flex-flow: column;
+      margin-top: 37px;
+    }
+    @include global.mq("sp") {
+      flex-flow: column;
+      margin-top: 37px;
+    }
 
     a {
       display: block;
@@ -26,8 +46,26 @@
       color: #fff;
       border-radius: 54px;
 
+      @include global.mq("tab") {
+        width: 243px;
+        font-size: 18px;
+        padding: 18px 0;
+      }
+      @include global.mq("sp") {
+        width: 243px;
+        font-size: 18px;
+        padding: 18px 0;
+      }
+
       &:last-child {
         margin-right: 0;
+
+        @include global.mq("tab") {
+          margin-top: 20px;
+        }
+        @include global.mq("sp") {
+          margin-top: 20px;
+        }
       }
     }
   }

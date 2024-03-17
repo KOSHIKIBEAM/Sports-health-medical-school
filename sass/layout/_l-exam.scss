@@ -1,6 +1,10 @@
 @use "../global" as global;
 .l-exam {
-  padding: 0 0 96px;
+  padding: 0 0 39px;
+
+  @include global.mq("pc") {
+    padding: 0 0 96px;
+  }
   background: #fff;
 
   &__inner {

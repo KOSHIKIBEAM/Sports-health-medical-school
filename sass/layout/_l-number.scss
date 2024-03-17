@@ -1,6 +1,10 @@
 @use "../global" as global;
 .l-number {
-  padding: 0 0 96px;
+  padding: 0 0 39px;
+
+  @include global.mq("pc") {
+    padding: 0 0 96px;
+  }
 
   &__inner {
     max-width: 1000px;
