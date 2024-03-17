@@ -56,5 +56,9 @@
   }
   .person4 {
     left: 15%;
+
+    @include global.mq("sp") {
+      left: 10%;
+    }
   }
 }
