@@ -21,17 +21,39 @@
       transform: translate(-50%, -50%);
       width: 15px;
       height: 18px;
+
+      @include global.mq("pc") {
+        top: 12%;
+      }
     }
 
     &::before {
-      left: -4%;
+      right: -6%;
       transform: rotate(-30deg);
-      border-left: 2px solid #000;
+      border-left: 4px solid #000;
+
+      @include global.mq("tab") {
+        border-left: 2px solid #000;
+        left: -4%;
+      }
+      @include global.mq("sp") {
+        border-left: 2px solid #000;
+        left: -4%;
+      }
     }
     &::after {
-      right: -4%;
+      right: -6%;
       transform: rotate(30deg);
-      border-right: 2px solid #000;
+      border-right: 4px solid #000;
+
+      @include global.mq("tab") {
+        right: -4%;
+        border-right: 2px solid #000;
+      }
+      @include global.mq("sp") {
+        right: -4%;
+        border-right: 2px solid #000;
+      }
     }
   }
 
