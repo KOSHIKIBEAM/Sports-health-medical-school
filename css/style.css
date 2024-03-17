@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 *,
 *::before,
@@ -422,10 +423,30 @@ a:hover {
   padding: 0 0 96px;
   background: #fff;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .l-diff {
+    padding: 0 0 57px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .l-diff {
+    padding: 0 0 57px;
+  }
+}
 .l-diff__inner {
   max-width: 1000px;
   width: 80%;
   margin: 0 auto;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .l-diff__inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .l-diff__inner {
+    width: 100%;
+  }
 }
 
 .l-exam {
@@ -524,6 +545,11 @@ a:hover {
 }
 .c-section__ttl .person4 {
   left: 15%;
+}
+@media screen and (max-width: 599px) {
+  .c-section__ttl .person4 {
+    left: 10%;
+  }
 }
 
 .p-number {
@@ -1693,36 +1719,109 @@ a:hover {
 }
 .p-diff h3 {
   color: #000;
-  font-size: 40px;
-  margin-bottom: 53px;
+  font-size: 17px;
+  margin-bottom: 30px;
   position: relative;
   display: inline-block;
 }
 .p-diff h3::before, .p-diff h3::after {
   content: "";
   position: absolute;
-  top: 13%;
+  top: 6%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 25px;
-  height: 41px;
+  width: 15px;
+  height: 18px;
 }
 .p-diff h3::before {
-  left: -6%;
+  left: -4%;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
-  border-left: 4px solid #000;
+  border-left: 2px solid #000;
 }
 .p-diff h3::after {
-  right: -6%;
+  right: -4%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
-  border-right: 4px solid #000;
+  border-right: 2px solid #000;
 }
 .p-diff__img {
   margin-bottom: 90px;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-diff__img {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+    padding: 25px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 25px 0 0 25px;
+    margin: 0 0 30px 30px;
+    /*スクロールバー全体の背景*/
+    /*スクロールバーの動く部分*/
+    /*スクロールバーの動く部分のホバー（マウスオーバー）*/
+  }
+  .p-diff__img div img {
+    max-width: 100%;
+    min-width: 750px;
+    vertical-align: top;
+  }
+  .p-diff__img::-webkit-scrollbar {
+    height: 23px;
+  }
+  .p-diff__img::-webkit-scrollbar-track {
+    background: #fff;
+    border-top: 1px solid #000;
+  }
+  .p-diff__img::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border: none;
+  }
+  .p-diff__img::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-diff__img {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+    padding: 25px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 25px 0 0 25px;
+    margin: 0 0 30px 30px;
+    /*スクロールバー全体の背景*/
+    /*スクロールバーの動く部分*/
+    /*スクロールバーの動く部分のホバー（マウスオーバー）*/
+  }
+  .p-diff__img div img {
+    max-width: 100%;
+    min-width: 750px;
+    vertical-align: top;
+  }
+  .p-diff__img::-webkit-scrollbar {
+    height: 23px;
+  }
+  .p-diff__img::-webkit-scrollbar-track {
+    background: #fff;
+    border-top: 1px solid #000;
+  }
+  .p-diff__img::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border: none;
+  }
+  .p-diff__img::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+}
 
+.p-diff__type {
+  margin: 0 30px;
+}
 @media screen and (min-width: 1024px) {
   .p-diff__type {
     display: -webkit-box;
@@ -1739,15 +1838,31 @@ a:hover {
 
 .p-diff__university,
 .p-diff__vocational {
-  width: calc(50% - 21px);
-  margin-right: 42px;
   border-radius: 20px;
-  padding: 35px 0 23px;
+}
+@media screen and (min-width: 1024px) {
+  .p-diff__university,
+  .p-diff__vocational {
+    margin-right: 42px;
+    padding: 35px 0 23px;
+    width: calc(50% - 21px);
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-diff__university,
+  .p-diff__vocational {
+    padding: 19px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-diff__university,
+  .p-diff__vocational {
+    padding: 19px;
+  }
 }
 .p-diff__university p:nth-child(1),
 .p-diff__vocational p:nth-child(1) {
   display: inline-block;
-  width: 394px;
   text-align: center;
   padding: 17px 0;
   border-radius: 100px;
@@ -1757,6 +1872,28 @@ a:hover {
   letter-spacing: 0.05em;
   margin: 0 0 31px;
 }
+@media screen and (min-width: 1024px) {
+  .p-diff__university p:nth-child(1),
+  .p-diff__vocational p:nth-child(1) {
+    width: 394px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-diff__university p:nth-child(1),
+  .p-diff__vocational p:nth-child(1) {
+    width: 185px;
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-diff__university p:nth-child(1),
+  .p-diff__vocational p:nth-child(1) {
+    width: 185px;
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
 .p-diff__university p:nth-child(2),
 .p-diff__vocational p:nth-child(2) {
   font-size: 30px;
@@ -1764,11 +1901,40 @@ a:hover {
   font-weight: bold;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-diff__university p:nth-child(2),
+  .p-diff__vocational p:nth-child(2) {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-diff__university p:nth-child(2),
+  .p-diff__vocational p:nth-child(2) {
+    font-size: 18px;
+  }
+}
 .p-diff__university p:nth-child(3),
 .p-diff__vocational p:nth-child(3) {
-  width: 400px;
-  margin: 0 auto;
   text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .p-diff__university p:nth-child(3),
+  .p-diff__vocational p:nth-child(3) {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-diff__university p:nth-child(3),
+  .p-diff__vocational p:nth-child(3) {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-diff__university p:nth-child(3),
+  .p-diff__vocational p:nth-child(3) {
+    font-size: 13px;
+  }
 }
 
 .p-diff__university {
@@ -1781,10 +1947,24 @@ a:hover {
 
 .p-diff__vocational {
   background: #ffebf4;
-  margin-right: 42px;
 }
 .p-diff__vocational p:nth-child(1) {
   background: #ff70b0;
+}
+@media screen and (min-width: 1024px) {
+  .p-diff__vocational {
+    margin-right: 42px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-diff__vocational {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-diff__vocational {
+    margin-bottom: 20px;
+  }
 }
 
 .p-exam {

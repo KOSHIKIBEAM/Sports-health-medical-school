@@ -8,8 +8,8 @@
 
   h3 {
     color: #000;
-    font-size: 40px;
-    margin-bottom: 53px;
+    font-size: 17px;
+    margin-bottom: 30px;
     position: relative;
     display: inline-block;
 
@@ -17,26 +17,97 @@
     &::after {
       content: "";
       position: absolute;
-      top: 13%;
+      top: 6%;
       transform: translate(-50%, -50%);
-      width: 25px;
-      height: 41px;
+      width: 15px;
+      height: 18px;
     }
 
     &::before {
-      left: -6%;
+      left: -4%;
       transform: rotate(-30deg);
-      border-left: 4px solid #000;
+      border-left: 2px solid #000;
     }
     &::after {
-      right: -6%;
+      right: -4%;
       transform: rotate(30deg);
-      border-right: 4px solid #000;
+      border-right: 2px solid #000;
     }
   }
 
   &__img {
     margin-bottom: 90px;
+
+    @include global.mq("tab") {
+      overflow-x: auto;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+      padding: 25px;
+      border-left: 1px solid #000;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      border-radius: 25px 0 0 25px;
+      margin: 0 0 30px 30px;
+
+      div img {
+        max-width: 100%;
+        min-width: 750px;
+        vertical-align: top;
+      }
+
+      &::-webkit-scrollbar {
+        height: 23px;
+      }
+      /*スクロールバー全体の背景*/
+      &::-webkit-scrollbar-track {
+        background: #fff;
+        border-top: 1px solid #000;
+      }
+      /*スクロールバーの動く部分*/
+      &::-webkit-scrollbar-thumb {
+        background: #aaa;
+        border: none;
+      }
+      /*スクロールバーの動く部分のホバー（マウスオーバー）*/
+      &::-webkit-scrollbar-thumb:hover {
+        background: #999;
+      }
+    }
+    @include global.mq("sp") {
+      overflow-x: auto;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+      padding: 25px;
+      border-left: 1px solid #000;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      border-radius: 25px 0 0 25px;
+      margin: 0 0 30px 30px;
+
+      div img {
+        max-width: 100%;
+        min-width: 750px;
+        vertical-align: top;
+      }
+
+      &::-webkit-scrollbar {
+        height: 23px;
+      }
+      /*スクロールバー全体の背景*/
+      &::-webkit-scrollbar-track {
+        background: #fff;
+        border-top: 1px solid #000;
+      }
+      /*スクロールバーの動く部分*/
+      &::-webkit-scrollbar-thumb {
+        background: #aaa;
+        border: none;
+      }
+      /*スクロールバーの動く部分のホバー（マウスオーバー）*/
+      &::-webkit-scrollbar-thumb:hover {
+        background: #999;
+      }
+    }
   }
 }
 
@@ -46,17 +117,27 @@
     align-items: flex-start;
     justify-content: space-between;
   }
+  margin: 0 30px;
 }
 .p-diff__university,
 .p-diff__vocational {
-  width: calc(50% - 42px * 1 / 2);
-  margin-right: 42px;
   border-radius: 20px;
-  padding: 35px 0 23px;
+
+  @include global.mq("pc") {
+    margin-right: 42px;
+    padding: 35px 0 23px;
+    width: calc(50% - 42px * 1 / 2);
+  }
+
+  @include global.mq("tab") {
+    padding: 19px;
+  }
+  @include global.mq("sp") {
+    padding: 19px;
+  }
 
   p:nth-child(1) {
     display: inline-block;
-    width: 394px;
     text-align: center;
     padding: 17px 0;
     border-radius: 100px;
@@ -65,6 +146,21 @@
     line-height: calc(36 / 30);
     letter-spacing: 0.05em;
     margin: 0 0 31px;
+
+    @include global.mq("pc") {
+      width: 394px;
+    }
+
+    @include global.mq("tab") {
+      width: 185px;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+    @include global.mq("sp") {
+      width: 185px;
+      padding: 15px 0;
+      font-size: 18px;
+    }
   }
 
   p:nth-child(2) {
@@ -72,11 +168,28 @@
     line-height: calc(36 / 30);
     font-weight: bold;
     margin-bottom: 24px;
+
+    @include global.mq("tab") {
+      font-size: 18px;
+    }
+    @include global.mq("sp") {
+      font-size: 18px;
+    }
   }
   p:nth-child(3) {
-    width: 400px;
-    margin: 0 auto;
     text-align: left;
+
+    @include global.mq("pc") {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    @include global.mq("tab") {
+      font-size: 13px;
+    }
+    @include global.mq("sp") {
+      font-size: 13px;
+    }
   }
 }
 .p-diff__university {
@@ -91,5 +204,16 @@
     background: #ff70b0;
   }
   background: #ffebf4;
-  margin-right: 42px;
+
+  @include global.mq("pc") {
+    margin-right: 42px;
+  }
+
+  @include global.mq("tab") {
+    margin-bottom: 20px;
+  }
+
+  @include global.mq("sp") {
+    margin-bottom: 20px;
+  }
 }

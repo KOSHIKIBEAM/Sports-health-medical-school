@@ -3,9 +3,23 @@
   padding: 0 0 96px;
   background: #fff;
 
+  @include global.mq("tab") {
+    padding: 0 0 57px;
+  }
+  @include global.mq("sp") {
+    padding: 0 0 57px;
+  }
+
   &__inner {
     max-width: 1000px;
     width: 80%;
     margin: 0 auto;
+
+    @include global.mq("tab") {
+      width: 100%;
+    }
+    @include global.mq("sp") {
+      width: 100%;
+    }
   }
 }
