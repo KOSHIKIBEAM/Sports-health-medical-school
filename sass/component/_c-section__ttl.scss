@@ -27,7 +27,7 @@
     left: 80%;
 
     @include global.mq("sp") {
-      left: 89%;
+      left: 86%;
     }
   }
   .person2,
@@ -39,9 +39,8 @@
     }
   }
   .person3 {
-    bottom: -8%;
-    width: 176px;
-    height: 181px;
+    bottom: 9%;
+    width: 17%;
 
     @include global.mq("sp") {
       bottom: 8%;
@@ -50,12 +49,11 @@
     }
   }
   .person5 {
-    width: 135px;
-    height: 184px;
+    width: 11%;
     left: 85%;
 
     @include global.mq("sp") {
-      left: 89%;
+      left: 86%;
       width: 27%;
       height: 127%;
     }
@@ -69,8 +67,7 @@
   }
   .person6 {
     @include global.mq("sp") {
-      width: 27%;
-      height: 116%;
+      width: 31%;
       bottom: 2%;
     }
   }

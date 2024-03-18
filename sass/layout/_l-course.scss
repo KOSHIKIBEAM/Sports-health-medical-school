@@ -1,14 +1,87 @@
 @use "../global" as global;
 .l-course {
-  padding: 0 0 39px;
-
-  @include global.mq("pc") {
-    padding: 0 0 96px;
-  }
+  position: relative;
 
   &__inner {
     max-width: 1000px;
     width: 80%;
     margin: 0 auto;
+  }
+}
+.l-course__wrap {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 96px;
+
+  @include global.mq("sp") {
+    padding: 0 0 39px;
+  }
+
+  & > img {
+    width: 269px;
+    height: 245px;
+    position: absolute;
+    top: 4%;
+    left: 93%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+
+    @include global.mq("pc") {
+      width: 550px;
+      height: 500px;
+      top: 20%;
+    }
+    @include global.mq("tab") {
+      width: 550px;
+      height: 500px;
+    }
+  }
+
+  &::before {
+    content: "";
+    background: url(/img/course/back-left.png) no-repeat center center/cover;
+    width: 269px;
+    height: 245px;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+
+    @include global.mq("pc") {
+      width: 550px;
+      height: 500px;
+    }
+    @include global.mq("tab") {
+      width: 550px;
+      height: 500px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background: url(/img/course/back-bottom-right.png) no-repeat center
+      center/cover;
+    width: 269px;
+    height: 245px;
+    position: absolute;
+    top: 99%;
+    left: 93%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 1500px) {
+      top: 91%;
+    }
+
+    @include global.mq("pc") {
+      width: 550px;
+      height: 500px;
+      left: 90%;
+    }
+    @include global.mq("tab") {
+      width: 550px;
+      height: 500px;
+    }
   }
 }

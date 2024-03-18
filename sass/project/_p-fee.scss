@@ -9,13 +9,6 @@
     padding: 60px 50px;
   }
 
-  h3 {
-    color: #000;
-    font-size: 40px;
-    margin-bottom: 53px;
-    text-align: center;
-  }
-
   .p-fee__items {
     @include global.mq("pc") {
       display: flex;
@@ -25,6 +18,7 @@
 
     @include global.mq("tab") {
       flex-direction: column;
+      padding: 25px;
     }
 
     @include global.mq("sp") {
@@ -91,6 +85,9 @@
     letter-spacing: 0.05em;
     margin-bottom: 82px;
 
+    @include global.mq("tab") {
+      margin-bottom: 22px;
+    }
     @include global.mq("sp") {
       margin-bottom: 22px;
     }
@@ -152,6 +149,9 @@
       color: #ff70b0;
     }
 
+    @include global.mq("tab") {
+      margin-bottom: 40px;
+    }
     @include global.mq("sp") {
       margin-bottom: 40px;
     }
@@ -169,11 +169,20 @@
       color: #1cadff;
     }
 
+    @include global.mq("tab") {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 40px;
+      }
+    }
     @include global.mq("sp") {
       margin-bottom: 40px;
 
       &:last-child {
         margin-bottom: 0;
+        padding-bottom: 40px;
       }
     }
   }
@@ -252,6 +261,10 @@
     width: 157px;
     margin-right: 37.5px;
 
+    @include global.mq("tab") {
+      width: 84px;
+      margin-right: 10px;
+    }
     @include global.mq("sp") {
       width: 84px;
       margin-right: 10px;
@@ -264,6 +277,10 @@
     letter-spacing: 0.05em;
     font-weight: bold;
 
+    @include global.mq("tab") {
+      line-height: calc(18 / 13);
+      font-size: 13px;
+    }
     @include global.mq("sp") {
       line-height: calc(18 / 13);
       font-size: 13px;

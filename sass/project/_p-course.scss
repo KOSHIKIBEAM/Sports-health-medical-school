@@ -146,7 +146,7 @@
     margin-bottom: 27px;
 
     @include global.mq("tab") {
-      font-size: 18px;
+      font-size: 25px;
       text-align: center;
     }
     @include global.mq("sp") {
@@ -159,7 +159,7 @@
     line-height: calc(30 / 16);
 
     @include global.mq("tab") {
-      font-size: 13px;
+      font-size: 18px;
     }
     @include global.mq("sp") {
       font-size: 13px;
@@ -196,6 +196,12 @@
     @include global.mq("pc") {
       padding: 88px 52px 32px;
     }
+    @media screen and (min-width: 1024px) and (max-width: 1112px) {
+      padding: 56px 12px 32px;
+    }
+    @media screen and (min-width: 1113px) and (max-width: 1201px) {
+      padding: 76px 31px 32px;
+    }
   }
   .p-course__item-ttl {
     color: #ff70b0;
@@ -205,6 +211,13 @@
   .p-course__item-body {
     @include global.mq("pc") {
       padding: 92px 42px 32px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1112px) {
+      padding: 56px 12px 32px;
+    }
+    @media screen and (min-width: 1113px) and (max-width: 1201px) {
+      padding: 76px 31px 32px;
     }
   }
   .p-course__item-ttl {
@@ -216,6 +229,13 @@
     @include global.mq("pc") {
       padding: 96px 52px 32px;
     }
+
+    @media screen and (min-width: 1024px) and (max-width: 1112px) {
+      padding: 56px 12px 32px;
+    }
+    @media screen and (min-width: 1113px) and (max-width: 1201px) {
+      padding: 76px 31px 32px;
+    }
   }
   .p-course__item-ttl {
     color: #ff9b06;
@@ -225,6 +245,12 @@
   .p-course__item-body {
     @include global.mq("pc") {
       padding: 71px 42px 32px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1112px) {
+      padding: 56px 12px 32px;
+    }
+    @media screen and (min-width: 1113px) and (max-width: 1201px) {
+      padding: 76px 31px 32px;
     }
   }
 
@@ -237,6 +263,12 @@
   .p-course__item-body {
     @include global.mq("pc") {
       padding: 99px 52px 32px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1112px) {
+      padding: 56px 12px 32px;
+    }
+    @media screen and (min-width: 1113px) and (max-width: 1201px) {
+      padding: 76px 31px 32px;
     }
   }
   .p-course__item-ttl {
@@ -280,24 +312,6 @@
       left: 8%;
     }
   }
-
-  &::after {
-    content: "";
-    background: url(/img/course/back-top-right.png) no-repeat center
-      center/cover;
-    width: 550px;
-    height: 500px;
-    position: absolute;
-    top: -1%;
-    right: -52%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    content: none;
-
-    @include global.mq("pc") {
-      content: "";
-    }
-  }
 }
 .course2 {
   &::before {
@@ -317,23 +331,6 @@
       left: 8%;
     }
   }
-
-  &::after {
-    content: "";
-    background: url(/img/course/back-left.png) no-repeat center center/cover;
-    width: 269px;
-    height: 245px;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-
-    @include global.mq("pc") {
-      width: 550px;
-      height: 500px;
-    }
-  }
 }
 .course4 {
   &::before {
@@ -351,24 +348,6 @@
 
     @include global.mq("pc") {
       left: 8%;
-    }
-  }
-
-  &::after {
-    content: "";
-    background: url(/img/course/back-bottom-right.png) no-repeat center
-      center/cover;
-    width: 269px;
-    height: 245px;
-    position: absolute;
-    top: 110%;
-    right: -83%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-
-    @include global.mq("pc") {
-      width: 550px;
-      height: 500px;
     }
   }
 }
