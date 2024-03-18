@@ -13,6 +13,10 @@
     position: relative;
     display: inline-block;
 
+    @media screen and (min-width: 806px) {
+      display: none !important;
+    }
+
     &::before,
     &::after {
       content: "";

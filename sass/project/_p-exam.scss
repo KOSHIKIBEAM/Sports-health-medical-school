@@ -18,10 +18,7 @@
     margin-top: 65px;
     display: flex;
     justify-content: center;
-
-    @include global.mq("pc") {
-      align-items: center;
-    }
+    align-items: center;
 
     @include global.mq("tab") {
       flex-flow: column;
@@ -35,7 +32,6 @@
     a {
       display: block;
       width: 400px;
-      margin-right: 32px;
       padding: 35px 0px;
       color: #fff;
       font-weight: bold;
@@ -45,6 +41,10 @@
       background-color: #000;
       color: #fff;
       border-radius: 54px;
+
+      @include global.mq("pc") {
+        margin-right: 32px;
+      }
 
       @include global.mq("tab") {
         width: 243px;

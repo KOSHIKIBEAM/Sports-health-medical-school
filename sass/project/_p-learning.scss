@@ -196,7 +196,7 @@
     text-align: left;
 
     @include global.mq("tab") {
-      padding-left: 27%;
+      padding-left: 20%;
     }
     @include global.mq("sp") {
       padding-left: 27%;
