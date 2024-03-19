@@ -1,0 +1,10 @@
+@use "../global" as global;
+.l-map {
+  width: 100%;
+  height: 436px;
+
+  iframe {
+    width: 100%;
+    height: 436px;
+  }
+}
