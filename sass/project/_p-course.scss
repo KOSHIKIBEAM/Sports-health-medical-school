@@ -24,9 +24,9 @@
     font-size: 25px;
     display: inline-block;
     padding: 12px 40px;
-    background: #ff70b0;
+    background: global.$pink-color;
     border-radius: 27px;
-    color: #fff;
+    color: global.$main-color;
     margin-bottom: 32px;
 
     @include global.mq("tab") {
@@ -44,7 +44,7 @@
   }
 
   h4 {
-    color: #fff;
+    color: global.$main-color;
     font-size: 40px;
     margin-bottom: 53px;
     position: relative;
@@ -78,20 +78,20 @@
     &::before {
       left: -9%;
       transform: rotate(-30deg);
-      border-left: 2px solid #fff;
+      border-left: 2px solid global.$main-color;
 
       @include global.mq("pc") {
-        border-left: 4px solid #fff;
+        border-left: 4px solid global.$main-color;
         left: -11%;
       }
     }
     &::after {
       right: -9%;
       transform: rotate(30deg);
-      border-right: 2px solid #fff;
+      border-right: 2px solid global.$main-color;
 
       @include global.mq("pc") {
-        border-right: 4px solid #fff;
+        border-right: 4px solid global.$main-color;
         right: -11%;
       }
     }
@@ -123,7 +123,7 @@
   }
 
   &-body {
-    background: #fff;
+    background: global.$main-color;
     border-radius: 20px 0 0 20px;
     text-align: left;
     letter-spacing: 0.05em;
@@ -135,13 +135,13 @@
     }
     @include global.mq("sp") {
       border-radius: 20px 20px 0 0;
-      padding: 55px 23px 32px;
+      padding: 55px 15px 32px;
     }
   }
 
   &-ttl {
     font-size: 30px;
-    color: #ff70b0;
+    color: global.$pink-color;
     font-weight: bold;
     margin-bottom: 27px;
 
@@ -157,6 +157,7 @@
   &-txt {
     font-size: 16px;
     line-height: calc(30 / 16);
+    font-weight: bold;
 
     @include global.mq("tab") {
       font-size: 18px;
@@ -204,7 +205,7 @@
     }
   }
   .p-course__item-ttl {
-    color: #ff70b0;
+    color: global.$pink-color;
   }
 }
 .p-course__item:nth-child(2) {
@@ -221,7 +222,7 @@
     }
   }
   .p-course__item-ttl {
-    color: #118fd8;
+    color: global.$blue-color;
   }
 }
 .p-course__item:nth-child(3) {
@@ -256,7 +257,7 @@
 
   .p-course__item-ttl {
     margin-bottom: 14px;
-    color: #ff70b0;
+    color: global.$pink-color;
   }
 }
 .p-course__item:nth-child(5) {
@@ -272,7 +273,7 @@
     }
   }
   .p-course__item-ttl {
-    color: #118fd8;
+    color: global.$blue-color;
   }
 }
 

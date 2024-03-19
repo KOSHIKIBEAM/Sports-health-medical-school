@@ -1,7 +1,7 @@
 @use "../global" as global;
 
 .p-number {
-  background: #fff;
+  background: global.$main-color;
   width: 100%;
   margin-top: 42px;
   border-radius: 20px;
@@ -28,7 +28,7 @@
   }
 
   h3 {
-    color: #000;
+    color: global.$black-color;
     font-size: 40px;
     margin-bottom: 53px;
     text-align: center;
@@ -80,7 +80,7 @@
     }
   }
   .p-number__item-ttl {
-    color: #fff;
+    color: global.$main-color;
     font-size: 30px;
     letter-spacing: 0.05em;
     margin-bottom: 82px;
@@ -160,10 +160,10 @@
   }
 
   .p-number__item-ttl {
-    background: #ff70b0;
+    background: global.$pink-color;
   }
   .p-number__item-data {
-    color: #ff70b0;
+    color: global.$pink-color;
   }
 }
 .p-number__item-university {
@@ -174,7 +174,7 @@
     padding-bottom: 30px;
   }
   .p-number__item-ttl {
-    background: #118fd8;
+    background: global.$blue-color;
   }
   .p-number__item-data {
     color: #1cadff;
@@ -195,7 +195,7 @@
       width: 183px;
       height: 183px;
       border-radius: 50%;
-      border: 4px dashed #000;
+      border: 4px dashed global.$black-color;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -203,7 +203,7 @@
 
       &::before {
         content: "";
-        border-right: 4px dashed #000;
+        border-right: 4px dashed global.$black-color;
         width: 1px;
         height: 20px;
         position: absolute;
@@ -218,7 +218,7 @@
 
         &::after {
           content: "";
-          border-right: 4px dashed #000;
+          border-right: 4px dashed global.$black-color;
           width: 1px;
           height: 80px;
           position: absolute;
@@ -261,7 +261,7 @@
     justify-content: center;
     color: #555;
     font-size: 16px;
-    background: #fff;
+    background: global.$main-color;
     border: solid 2px #555;
     margin-right: 60px;
 
@@ -279,7 +279,7 @@
       right: -24px;
       margin-top: -12px;
       border: 12px solid transparent;
-      border-left: 12px solid #fff;
+      border-left: 12px solid global.$main-color;
       z-index: 2;
     }
 
@@ -348,7 +348,7 @@
     justify-content: center;
     color: #555;
     font-size: 16px;
-    background: #fff;
+    background: global.$main-color;
     border: solid 2px #555;
     margin-right: 60px;
 
@@ -366,7 +366,7 @@
       right: -24px;
       margin-top: -12px;
       border: 12px solid transparent;
-      border-left: 12px solid #fff;
+      border-left: 12px solid global.$main-color;
       z-index: 2;
     }
 

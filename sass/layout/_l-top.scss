@@ -1,7 +1,7 @@
 @use "../global" as global;
 
 .l-top {
-  color: #fff;
+  color: global.$main-color;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -119,7 +119,7 @@
   &__txt {
     text-align: center;
     color: #1cadff;
-    background: #fff;
+    background: global.$main-color;
     padding: 10px;
     display: inline-block;
     margin: 0 auto 24px;
@@ -208,13 +208,13 @@
     background: #0d7cc4;
   }
   &-bg-pink {
-    background: #ff70b0;
+    background: global.$pink-color;
   }
   &-circle-wrap {
   }
   &-circle {
     padding: 16px;
-    background: #000;
+    background: global.$black-color;
     border-radius: 50%;
     margin: 0 -16px;
 

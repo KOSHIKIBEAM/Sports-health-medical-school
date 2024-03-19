@@ -5,7 +5,7 @@
   @include global.mq("sp") {
     padding: 0 0 39px;
   }
-  background: #fff;
+  background: global.$main-color;
 
   &__inner {
     max-width: 1000px;
