@@ -1,19 +1,13 @@
 // 色
-$main-color: #192f60; // メインカラー
+$main-color: #fff; // メインカラー
 $bg-color: #5cc4ff; // bgカラー
-$accent-color: #fff; // アクセントカラー
-$text-color: #333333; // テキストカラー
-$txt-color2D: #2d2d2d; // テキストカラー
-$btn-color: #20868a; // ボタンカラー
-
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+$pink-color: #ff70b0; // ピンクカラー
+$blue-color: #118fd8; // ブルーカラー
+$black-color: #000; // テキストカラー
 
 // フォント
-$ff-awesome: "heisei-kaku-gothic-std", sans-serif; // Font Awesome
-$ff-quicksand: "Quicksand", sans-serif; // Font Awesome
-$ff-en: "NHaasGroteskTXPro-55Rg", "NHaasGroteskTXPro-65Md",
-  "NHaasGroteskTXPro-75Bd", sans-serif; // 英字
-$ff-base: "heisei-kaku-gothic-std", sans-serif; // 日本語標準
+$ff-kozuka: "kozuka-gothic-pr6n", sans-serif; // kozuka
+$ff-base: sans-serif; // 日本語標準
 $fz-base: 16px; // ベースフォントサイズ
 $fw-base: 500; // ベースフォントウェイト
 $lh-base: 1.6; // ベース行間

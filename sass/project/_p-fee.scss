@@ -1,7 +1,7 @@
 @use "../global" as global;
 
 .p-fee {
-  background: #fff;
+  background: global.$main-color;
   width: 100%;
   margin-top: 42px;
   border-radius: 20px;
@@ -35,7 +35,7 @@
   width: 100%;
   color: #555;
   font-size: 16px;
-  background: #fff;
+  background: global.$main-color;
   border: solid 2px #555;
   box-sizing: border-box;
 
@@ -46,7 +46,7 @@
     left: 50%;
     margin-left: -16px;
     border: 13px solid transparent;
-    border-top: 13px solid #fff;
+    border-top: 13px solid global.$main-color;
     z-index: 2;
   }
 
@@ -80,22 +80,25 @@
 .p-fee__item-vocational,
 .p-fee__item-university {
   .p-fee__item-ttl {
-    color: #fff;
+    color: global.$main-color;
     font-size: 30px;
     letter-spacing: 0.05em;
     margin-bottom: 82px;
 
     @include global.mq("tab") {
       margin-bottom: 22px;
+      font-size: 23px;
     }
     @include global.mq("sp") {
       margin-bottom: 22px;
+      font-size: 18px;
     }
   }
 
   .p-fee__item-data-wrap {
     & > p {
       font-size: 30px;
+      font-weight: bold;
 
       @include global.mq("tab") {
         font-size: 23px;
@@ -113,6 +116,7 @@
   .p-fee__item-data {
     font-size: 80px;
     font-weight: bold;
+    font-family: global.$ff-kozuka;
     line-height: calc(108 / 90);
 
     @include global.mq("tab") {
@@ -146,7 +150,7 @@
 .p-fee__item-vocational {
   .p-fee__item-data-wrap {
     & > p {
-      color: #ff70b0;
+      color: global.$pink-color;
     }
 
     @include global.mq("tab") {
@@ -157,10 +161,10 @@
     }
   }
   .p-fee__item-ttl {
-    background: #ff70b0;
+    background: global.$pink-color;
   }
   .p-fee__item-data {
-    color: #ff70b0;
+    color: global.$pink-color;
   }
 }
 .p-fee__item-university {
@@ -188,7 +192,7 @@
   }
 
   .p-fee__item-ttl {
-    background: #118fd8;
+    background: global.$blue-color;
   }
   .p-fee__item-data {
     color: #1cadff;
@@ -209,7 +213,7 @@
       width: 183px;
       height: 183px;
       border-radius: 50%;
-      border: 4px dashed #000;
+      border: 4px dashed global.$black-color;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -218,7 +222,7 @@
       &::before,
       &::after {
         content: "";
-        border-right: 4px dashed #000;
+        border-right: 4px dashed global.$black-color;
         width: 1px;
         height: 310px;
         position: absolute;

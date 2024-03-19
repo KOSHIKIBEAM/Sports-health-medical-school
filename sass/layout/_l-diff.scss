@@ -1,7 +1,7 @@
 @use "../global" as global;
 .l-diff {
   padding: 0 0 96px;
-  background: #fff;
+  background: global.$main-color;
 
   @include global.mq("sp") {
     padding: 0 0 57px;

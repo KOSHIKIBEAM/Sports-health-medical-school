@@ -33,13 +33,13 @@
       display: block;
       width: 400px;
       padding: 35px 0px;
-      color: #fff;
+      color: global.$main-color;
       font-weight: bold;
       font-size: 30px;
       letter-spacing: 0.05em;
       text-align: center;
-      background-color: #000;
-      color: #fff;
+      background-color: global.$black-color;
+      color: global.$main-color;
       border-radius: 54px;
 
       @include global.mq("pc") {

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -79,8 +78,8 @@ a {
 }
 
 body {
-  color: #333333;
-  font-family: "heisei-kaku-gothic-std", sans-serif;
+  color: #000;
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
@@ -1256,6 +1255,7 @@ a:hover {
 .p-learning__table table {
   table-layout: auto;
   width: 100%;
+  font-weight: bold;
 }
 .p-learning__table table,
 .p-learning__table td,
@@ -1266,7 +1266,6 @@ a:hover {
 }
 .p-learning__table td {
   padding: 25px 0;
-  font-weight: bold;
 }
 .p-learning__table tr:nth-child(1) th:nth-child(2),
 .p-learning__table tr:nth-child(1) th:nth-child(3),
@@ -1285,7 +1284,6 @@ a:hover {
 .p-learning__table tr:nth-child(1) th:nth-child(2),
 .p-learning__table tr:nth-child(1) th:nth-child(3) {
   font-size: 24px;
-  font-weight: bold;
   font-size: 18px;
 }
 .p-learning__table tr:nth-child(1) th:nth-child(2) {
@@ -1445,6 +1443,7 @@ a:hover {
   line-height: 1.2;
   letter-spacing: 0.05em;
   margin: 0 0 31px;
+  font-weight: bold;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .p-learning__university p,
@@ -1470,6 +1469,7 @@ a:hover {
   font-size: 20px;
   width: 381px;
   margin: 0 auto;
+  font-weight: bold;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .p-learning__university ul,
@@ -1494,7 +1494,6 @@ a:hover {
 .p-learning__university li,
 .p-learning__vocational li {
   line-height: 1.85;
-  font-weight: bold;
 }
 
 .p-learning__university {
@@ -1634,17 +1633,20 @@ a:hover {
   .p-fee__item-vocational .p-fee__item-ttl,
   .p-fee__item-university .p-fee__item-ttl {
     margin-bottom: 22px;
+    font-size: 23px;
   }
 }
 @media screen and (max-width: 599px) {
   .p-fee__item-vocational .p-fee__item-ttl,
   .p-fee__item-university .p-fee__item-ttl {
     margin-bottom: 22px;
+    font-size: 18px;
   }
 }
 .p-fee__item-vocational .p-fee__item-data-wrap > p,
 .p-fee__item-university .p-fee__item-data-wrap > p {
   font-size: 30px;
+  font-weight: bold;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .p-fee__item-vocational .p-fee__item-data-wrap > p,
@@ -1668,6 +1670,7 @@ a:hover {
 .p-fee__item-university .p-fee__item-data {
   font-size: 80px;
   font-weight: bold;
+  font-family: "kozuka-gothic-pr6n", sans-serif;
   line-height: 1.2;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -2016,6 +2019,7 @@ a:hover {
 
 .p-diff__type {
   margin: 0 30px;
+  font-weight: bold;
 }
 @media screen and (min-width: 1024px) {
   .p-diff__type {
@@ -2093,7 +2097,6 @@ a:hover {
 .p-diff__vocational p:nth-child(2) {
   font-size: 30px;
   line-height: 1.2;
-  font-weight: bold;
   margin-bottom: 24px;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -2416,7 +2419,7 @@ a:hover {
 @media screen and (max-width: 599px) {
   .p-course__item-body {
     border-radius: 20px 20px 0 0;
-    padding: 55px 23px 32px;
+    padding: 55px 15px 32px;
   }
 }
 .p-course__item-ttl {
@@ -2440,6 +2443,7 @@ a:hover {
 .p-course__item-txt {
   font-size: 16px;
   line-height: 1.875;
+  font-weight: bold;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .p-course__item-txt {
