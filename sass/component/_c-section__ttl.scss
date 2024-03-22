@@ -2,6 +2,11 @@
 .c-section__ttl {
   width: 100vw;
   position: relative;
+  top: -2px;
+
+  img {
+    width: 100vw;
+  }
 
   .person1,
   .person2,
@@ -12,7 +17,7 @@
     position: absolute;
     bottom: 11%;
     transform: translate(-50%, 0%);
-    width: 14%;
+    width: 12%;
 
     @include global.mq("sp") {
       width: 25%;
@@ -30,22 +35,20 @@
       left: 86%;
     }
   }
-  .person2,
-  .person6 {
+  .person2 {
     left: 20%;
 
     @include global.mq("sp") {
       left: 12%;
     }
   }
+
   .person3 {
     bottom: 9%;
     width: 17%;
 
     @include global.mq("sp") {
-      bottom: 8%;
-      width: 27%;
-      height: 116%;
+      width: 30%;
     }
   }
   .person5 {
@@ -53,9 +56,7 @@
     left: 85%;
 
     @include global.mq("sp") {
-      left: 86%;
-      width: 27%;
-      height: 127%;
+      width: 22%;
     }
   }
   .person4 {
@@ -65,10 +66,15 @@
       left: 10%;
     }
   }
+
   .person6 {
+    left: 31%;
+    width: 14%;
+
     @include global.mq("sp") {
       width: 31%;
       bottom: 2%;
+      left: 12%;
     }
   }
 }

@@ -5,9 +5,10 @@ $pink-color: #ff70b0; // ピンクカラー
 $blue-color: #118fd8; // ブルーカラー
 $black-color: #000; // テキストカラー
 
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
 // フォント
 $ff-kozuka: "kozuka-gothic-pr6n", sans-serif; // kozuka
-$ff-base: sans-serif; // 日本語標準
+$ff-base: "Zen Kaku Gothic New", sans-serif; // 日本語標準
 $fz-base: 16px; // ベースフォントサイズ
 $fw-base: 500; // ベースフォントウェイト
 $lh-base: 1.6; // ベース行間

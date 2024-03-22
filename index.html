@@ -18,6 +18,8 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+    <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
     <script
         src="https://webfont.fontplus.jp/accessor/script/fontplus.js?w4WsASt2SCs%3D&box=p4XjR6Z0x3E%3D&aa=1&ab=2"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -28,24 +30,12 @@
 
     <main>
         <section class="l-top">
-            <div class="l-top__img">
-                <img src="/img/top/top-fukidsahi1.png" alt="fukidsahi1">
-                <img src="/img/top/top-fukidsahi2.png" alt="fukidsahi2">
-            </div>
             <div class="l-top__body">
-                <p class="l-top__txt">柔道整復師・鍼灸師・<br class="u-hidden-tab u-hidden-pc">スポーツトレーナーを目指す方へ</p>
-                <h1 class="l-top__ttl">
-                    <span class="l-top__ttl-newline">
-                        <span class="l-top__ttl-bg-blue">大学</span>
-                        <span class="l-top__ttl-txt-small">と</span>
-                        <span class="l-top__ttl-bg-pink">専門学校</span>
-                        <span class="l-top__ttl-txt-small">の</span>違いを理解して</span>
-                    <span class="l-top__ttl-newline">
-                        <span class="l-top__ttl-circle">比</span>
-                        <span class="l-top__ttl-circle">べ</span>
-                        <span class="l-top__ttl-circle">て</span>
-                        みませんか？
-                    </span>
+                <h1 class="l-top__ttl-img">
+                    <img class="u-hidden-tab u-hidden-pc" src="/img/top/top-sp.png"
+                        alt="柔道整復師・鍼灸師・スポーツトレーナーを目指す方へ。大学と専門学校の違いを理解して比べてみませんか？">
+                    <img class="u-hidden-sp" src="/img/top/top.png"
+                        alt="柔道整復師・鍼灸師・スポーツトレーナーを目指す方へ。大学と専門学校の違いを理解して比べてみませんか？">
                 </h1>
             </div>
         </section>
@@ -68,9 +58,9 @@
                                     <p>就職率</p>
                                 </div>
                                 <div class="p-number__item-data-wrap">
-                                    <div class="p-number__item-data">99<span>.2%</span></div>
-                                    <div class="p-number__item-quote">引用元：<a href="#" target="_blank"
-                                            rel="noopener">日本商工会議所</a></div>
+                                    <div class="p-number__item-data"><span class="letter-space">９９</span><span
+                                            class="font-small">.２%</span></div>
+                                    <div class="p-number__item-quote">引用元：日本商工会議所</div>
                                 </div>
                             </div>
                             <div class="p-number__item-wrap">
@@ -78,7 +68,9 @@
                                     <p>在籍<br>年数</p>
                                 </div>
                                 <div class="p-number__item-data-wrap">
-                                    <div class="p-number__item-data">2<span>~</span>3<span>年</span></div>
+                                    <div class="p-number__item-data"><span class="letter-space">２</span><span
+                                            class="font-small">~</span><span class="letter-space">３</span><span
+                                            class="font-small">年</span></div>
                                 </div>
                             </div>
                             <div class="p-number__item-wrap">
@@ -86,10 +78,12 @@
                                     <p>学費</p>
                                 </div>
                                 <div class="p-number__item-data-wrap">
-                                    <div class="p-number__item-data"><span>約</span>230<span>万</span></div>
+                                    <div class="p-number__item-data"><span class="font-small">約</span><span
+                                            class="letter-space">２３０</span><span class="font-small">万</span></div>
                                     <div class="p-number__item-quote">
-                                        引用元：<a href="#" target="_blank" rel="noopener">H30大学等納付金調査
-                                            <br>H30学生・生徒納付金調査結果（専門課程）</a></div>
+                                        引用元：H30大学等納付金調査
+                                        <br>H30学生・生徒納付金調査結果（専門課程）
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -113,9 +107,9 @@
                                     <p>就職率</p>
                                 </div>
                                 <div class="p-number__item-data-wrap">
-                                    <div class="p-number__item-data">97<span>.3%</span></div>
-                                    <div class="p-number__item-quote">引用元：<a href="#" target="_blank"
-                                            rel="noopener">日本商工会議所</a></div>
+                                    <div class="p-number__item-data"><span class="letter-space">９７</span><span
+                                            class="font-small">.３%</span></div>
+                                    <div class="p-number__item-quote">引用元：日本商工会議所</div>
                                 </div>
                             </div>
                             <div class="p-number__item-wrap">
@@ -123,7 +117,8 @@
                                     <p>在籍<br>年数</p>
                                 </div>
                                 <div class="p-number__item-data-wrap">
-                                    <div class="p-number__item-data">4<span>年</span></div>
+                                    <div class="p-number__item-data"><span class="letter-space">４</span><span
+                                            class="font-small">年</span></div>
                                 </div>
                             </div>
                             <div class="p-number__item-wrap">
@@ -131,10 +126,11 @@
                                     <p>学費</p>
                                 </div>
                                 <div class="p-number__item-data-wrap">
-                                    <div class="p-number__item-data"><span>約</span>460<span>万</span></div>
+                                    <div class="p-number__item-data"><span class="font-small">約</span><span
+                                            class="letter-space">４６０</span><span class="font-small">万</span></div>
                                     <div class="p-number__item-quote">
-                                        引用元：<a href="#" target="_blank" rel="noopener">H30大学等納付金調査<br>
-                                            H30学生・生徒納付金調査結果（専門課程）</a></div>
+                                        引用元：H30大学等納付金調査<br>
+                                        H30学生・生徒納付金調査結果（専門課程）</div>
                                 </div>
                             </div>
                         </div>
@@ -160,14 +156,15 @@
                                     <th>大学</th>
                                 </tr>
                                 <tr>
-                                    <th>カリキュラム</th>
-                                    <td>特定の職業に<br class="u-hidden-pc">直結した<br class="u-hidden-pc">実践的な学び</td>
+                                    <th><span>カリキュラム</span></th>
+                                    <td>特定の職業に<br class="u-hidden-pc">直結した<br class="u-hidden-pc">実践的な学び
+                                    </td>
                                     <td>学術的・<br class="u-hidden-pc">理論的な学問<br>
                                         ＋<br>
                                         一般教養を<br class="u-hidden-pc">幅広く学ぶ</td>
                                 </tr>
                                 <tr>
-                                    <th>適正</th>
+                                    <th><span>適正</span></th>
                                     <td>
                                         <ul>
                                             <li>
@@ -226,7 +223,7 @@
                                     ・4年間でゆっくり将来を考えたい
                                 </li>
                                 <li>
-                                    ・自主性をもって興味や関心、<br class="u-hidden-sp">
+                                    ・自主性をもって興味や関心、<br class="u-hidden-sp u-hidden-tab">
                                     自分の可能性を広げたい
                                 </li>
                             </ul>
@@ -254,16 +251,16 @@
                                     <p>卒業までにかかる学費</p>
                                 </div>
                                 <p>柔道整復師</p>
-                                <div class="p-fee__item-data"><span>約</span>400 <span>〜</span> <br>450<span>万</span>
+                                <div class="p-fee__item-data"><span>約</span>４００<span>〜</span> <br>４５０<span>万</span>
                                 </div>
-                                <div class="p-fee__item-quote">引用元：<a href="#" target="_blank" rel="noopener">かる・ける</a>
+                                <div class="p-fee__item-quote">引用元：かる・ける
                                 </div>
                             </div>
                             <div class="p-fee__item-data-wrap">
                                 <p>はり師・きゅう師</p>
-                                <div class="p-fee__item-data"><span>約</span>360 <span>〜</span> <br>450<span>万</span>
+                                <div class="p-fee__item-data"><span>約</span>３６０<span>〜</span> <br>４５０<span>万</span>
                                 </div>
-                                <div class="p-fee__item-quote">引用元：<a href="#" target="_blank" rel="noopener">かる・ける</a>
+                                <div class="p-fee__item-quote">引用元：かる・ける
                                 </div>
                             </div>
                         </div>
@@ -282,16 +279,16 @@
                                     <p>卒業までにかかる学費</p>
                                 </div>
                                 <p>柔道整復師</p>
-                                <div class="p-fee__item-data"><span>約</span>640 <span>〜</span> <br>710<span>万</span>
+                                <div class="p-fee__item-data"><span>約</span>６４０<span>〜</span> <br>７１０<span>万</span>
                                 </div>
-                                <div class="p-fee__item-quote">引用元：<a href="#" target="_blank" rel="noopener">かる・ける</a>
+                                <div class="p-fee__item-quote">引用元：かる・ける
                                 </div>
                             </div>
                             <div class="p-fee__item-data-wrap">
                                 <p>はり師・きゅう師</p>
-                                <div class="p-fee__item-data"><span>約</span>480 <span>〜</span> <br>600<span>万</span>
+                                <div class="p-fee__item-data"><span>約</span>４８０<span>〜</span> <br>６００<span>万</span>
                                 </div>
-                                <div class="p-fee__item-quote">引用元：<a href="#" target="_blank" rel="noopener">かる・ける</a>
+                                <div class="p-fee__item-quote">引用元：かる・ける
                                 </div>
                             </div>
                         </div>
@@ -317,7 +314,8 @@
                     <h3>横にスクロールして見てみよう！</h3>
                     <div class="p-diff__img">
                         <div>
-                            <img src="/img/diff/diff-img.png" alt="表">
+                            <img class="u-hidden-sp" src="/img/diff/diff-img.png" alt="表">
+                            <img class="u-hidden-tab u-hidden-pc" src="/img/diff/diff-img-sp.png" alt="表">
                         </div>
                     </div>
                     <div class="p-diff__type">
@@ -470,6 +468,16 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
+
+    <script>
+        new ScrollHint('.p-diff__img', {
+            suggestiveShadow: true,
+            remainingTime: 5000,
+            i18n: {
+                scrollable: 'スクロールできます'
+            }
+        });
+    </script>
 </body>
 
 </html>

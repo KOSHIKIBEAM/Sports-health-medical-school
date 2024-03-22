@@ -32,6 +32,7 @@
     font-size: 40px;
     margin-bottom: 53px;
     text-align: center;
+    font-weight: bold;
 
     @include global.mq("tab") {
       margin-bottom: 35px;
@@ -75,7 +76,7 @@
   .p-number__item-wrap {
     &:nth-of-type(2) {
       @include global.mq("pc") {
-        margin: 85px 0;
+        margin: 105px 0;
       }
     }
   }
@@ -106,42 +107,71 @@
     }
   }
   .p-number__item-data {
-    font-size: 90px;
+    font-size: 76px;
     font-weight: bold;
     line-height: calc(108 / 90);
+    font-family: global.$ff-kozuka;
+    text-align: center;
+
+    @media screen and (min-width: 1235px) and (max-width: 1248px) {
+      font-size: 73px;
+    }
+    @media screen and (max-width: 1035px) {
+      font-size: 74px;
+    }
 
     @include global.mq("tab") {
-      font-size: 64px;
+      font-size: 57px;
     }
     @include global.mq("sp") {
-      font-size: 64px;
+      font-size: 45px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 490px) {
+      font-size: 36px;
+    }
+    @media screen and (min-width: 391px) and (max-width: 417px) {
+      font-size: 36px;
     }
     @media screen and (max-width: 390px) {
-      font-size: 44px;
+      font-size: 36px;
     }
 
-    span {
-      font-size: 60px;
+    .font-small {
+      font-size: 45px;
       line-height: calc(72 / 60);
 
       @include global.mq("tab") {
-        font-size: 44px;
+        font-size: 40px;
       }
       @include global.mq("sp") {
-        font-size: 44px;
+        font-size: 27px;
+      }
+      @media screen and (min-width: 481px) and (max-width: 490px) {
+        font-size: 25px;
+      }
+      @media screen and (min-width: 391px) and (max-width: 417px) {
+        font-size: 25px;
       }
       @media screen and (max-width: 390px) {
-        font-size: 34px;
+        font-size: 25px;
       }
     }
+  }
+  .letter-space {
+    letter-spacing: -0.2em;
+    margin-right: 5px;
   }
   .p-number__item-quote {
     font-size: 12px;
     line-height: calc(14 / 12);
+    text-align: center;
+
     @include global.mq("tab") {
       font-size: 8px;
+      text-align: left;
     }
     @include global.mq("sp") {
+      text-align: left;
       font-size: 8px;
     }
 
@@ -200,6 +230,7 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      font-weight: bold;
 
       &::before {
         content: "";
@@ -244,6 +275,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    margin-left: 18%;
 
     &:last-child {
       margin-bottom: 0;
@@ -269,7 +301,7 @@
       margin-right: 25px;
     }
     @media screen and (max-width: 390px) {
-      margin-right: 25px;
+      margin-right: 20px;
     }
 
     &::before {
@@ -296,6 +328,7 @@
     p {
       margin: 0;
       padding: 0;
+      font-weight: bold;
     }
   }
   .balloon {
@@ -331,6 +364,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    margin-left: 25%;
 
     &:last-child {
       margin-bottom: 0;
@@ -387,5 +421,21 @@
   }
   .balloon {
     padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .p-number__item-wrap {
+    margin-left: 18%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .p-number__item-wrap {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .p-number__item-wrap {
+    margin-left: 8%;
   }
 }

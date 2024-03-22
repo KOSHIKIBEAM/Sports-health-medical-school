@@ -18,6 +18,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
   }
 
   h3 {
@@ -46,17 +47,14 @@
   h4 {
     color: global.$main-color;
     font-size: 40px;
-    margin-bottom: 53px;
     position: relative;
     display: inline-block;
 
     @include global.mq("tab") {
       font-size: 23px;
-      margin-bottom: 0;
     }
     @include global.mq("sp") {
       font-size: 23px;
-      margin-bottom: 0;
     }
 
     &::before,

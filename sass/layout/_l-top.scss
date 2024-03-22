@@ -18,215 +18,22 @@
 
   @include global.mq("sp") {
     background: url(/img/top/bg-sp.png) no-repeat center center/cover;
-    height: 480px;
-  }
-
-  &__img {
-    @include global.mq("pc") {
-      position: relative;
-      width: 100%;
-    }
-
-    img {
-      width: 303px;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      top: 0%;
-
-      @include global.mq("tab") {
-        width: 196px;
-        height: 125px;
-        top: 12%;
-      }
-      @include global.mq("sp") {
-        width: 196px;
-        height: 125px;
-        top: 10%;
-      }
-
-      @media screen and (max-width: 380px) {
-        width: 167px;
-        height: 98px;
-      }
-      &:nth-child(1) {
-        left: 17%;
-
-        @media screen and (min-width: 1500px) {
-          left: 23%;
-        }
-
-        @include global.mq("tab") {
-          left: 29%;
-        }
-
-        @media screen and (min-width: 1020px) and (max-width: 1030px) {
-          left: 15%;
-        }
-
-        @include global.mq("sp") {
-          left: 29%;
-          top: 8%;
-        }
-        @media screen and (max-width: 380px) {
-          left: 29%;
-          top: 8%;
-        }
-      }
-
-      &:nth-child(2) {
-        left: 83%;
-
-        @media screen and (min-width: 1500px) {
-          left: 78%;
-        }
-
-        @include global.mq("tab") {
-          left: 68%;
-        }
-
-        @media screen and (min-width: 1020px) and (max-width: 1030px) {
-          left: 85%;
-        }
-
-        @include global.mq("sp") {
-          left: 68%;
-          top: 14%;
-        }
-
-        @media screen and (max-width: 380px) {
-          left: 68%;
-          top: 14%;
-        }
-      }
-    }
-  }
-
-  &__body {
-    margin-top: 25px;
-    @include global.mq("tab") {
-      margin-top: 25px;
-    }
-
-    @include global.mq("sp") {
-      margin-top: 105px;
-    }
-
-    @media screen and (max-width: 380px) {
-      margin-top: 125px;
-    }
-  }
-
-  &__txt {
-    text-align: center;
-    color: #1cadff;
-    background: global.$main-color;
-    padding: 10px;
-    display: inline-block;
-    margin: 0 auto 24px;
-    font-size: 25px;
-    letter-spacing: -0.05em;
-    border-radius: 17px;
-
-    @include global.mq("tab") {
-      border-radius: 33px;
-      font-size: 18px;
-      width: 84.2%;
-      margin: 0 auto 26px;
-    }
-
-    @include global.mq("sp") {
-      border-radius: 33px;
-      font-size: 18px;
-      width: 84.2%;
-      min-width: 290px;
-      margin: 0 auto 26px;
-      max-width: 330px;
-    }
   }
 }
-.l-top__ttl {
-  text-align: center;
-  font-size: 35px;
+.l-top__ttl-img {
+  width: 86.48%;
+  margin: 0 auto;
 
+  @include global.mq("pc") {
+    max-width: 1400px;
+    min-width: 900px;
+  }
   @include global.mq("tab") {
-    font-size: 30px;
+    min-width: 540px;
   }
   @include global.mq("sp") {
-    font-size: 30px;
-  }
-
-  @media screen and (max-width: 380px) {
-    font-size: 27px;
-  }
-
-  &-newline {
-    display: block;
-
-    &:nth-child(1) {
-      @include global.mq("tab") {
-        margin-bottom: 10px;
-      }
-    }
-
-    &:nth-child(2) {
-      font-size: 66px;
-
-      @include global.mq("tab") {
-        font-size: 33px;
-      }
-      @include global.mq("sp") {
-        font-size: 33px;
-      }
-    }
-  }
-  &-txt-small {
-    font-size: 26px;
-
-    @include global.mq("tab") {
-      font-size: 23px;
-    }
-    @include global.mq("sp") {
-      font-size: 23px;
-    }
-  }
-  &-bg-pink,
-  &-bg-blue {
-    font-size: 48px;
-    padding: 6px 11px 8px;
-
-    @include global.mq("tab") {
-      font-size: 43px;
-    }
-    @include global.mq("sp") {
-      font-size: 43px;
-    }
-    @media screen and (max-width: 380px) {
-      font-size: 34px;
-    }
-  }
-  &-bg-blue {
-    background: #0d7cc4;
-  }
-  &-bg-pink {
-    background: global.$pink-color;
-  }
-  &-circle-wrap {
-  }
-  &-circle {
-    padding: 16px;
-    background: global.$black-color;
-    border-radius: 50%;
-    margin: 0 -16px;
-
-    @include global.mq("tab") {
-      margin: 0 -12px;
-    }
-    @include global.mq("sp") {
-      margin: 0 -12px;
-    }
-
-    @media screen and (max-width: 380px) {
-      margin: 0 -9px;
-    }
+    width: 91.85%;
+    padding: 20px 0;
+    max-width: 425px;
   }
 }
