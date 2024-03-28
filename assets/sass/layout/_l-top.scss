@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(/img/top/bg.png) no-repeat center center/cover;
+  background: url(/assets/img/top/bg.png) no-repeat center center/cover;
 
   @include global.mq("pc") {
     height: 550px;
@@ -17,7 +17,7 @@
   }
 
   @include global.mq("sp") {
-    background: url(/img/top/bg-sp.png) no-repeat center center/cover;
+    background: url(/assets/img/top/bg-sp.png) no-repeat center center/cover;
   }
 }
 .l-top__ttl-img {

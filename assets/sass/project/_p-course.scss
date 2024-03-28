@@ -303,7 +303,8 @@
 
 .course1 {
   &::before {
-    background: url(/img/course/course-1.png) no-repeat center center/cover;
+    background: url(/assets/img/course/course-1.png) no-repeat center
+      center/cover;
 
     left: 50%;
 
@@ -314,7 +315,8 @@
 }
 .course2 {
   &::before {
-    background: url(/img/course/course-2.png) no-repeat center center/cover;
+    background: url(/assets/img/course/course-2.png) no-repeat center
+      center/cover;
 
     @include global.mq("pc") {
       right: -2%;
@@ -323,7 +325,8 @@
 }
 .course3 {
   &::before {
-    background: url(/img/course/course-3.png) no-repeat center center/cover;
+    background: url(/assets/img/course/course-3.png) no-repeat center
+      center/cover;
     left: 50%;
 
     @include global.mq("pc") {
@@ -333,7 +336,8 @@
 }
 .course4 {
   &::before {
-    background: url(/img/course/course-4.png) no-repeat center center/cover;
+    background: url(/assets/img/course/course-4.png) no-repeat center
+      center/cover;
 
     @include global.mq("pc") {
       right: -2%;
@@ -342,7 +346,8 @@
 }
 .course5 {
   &::before {
-    background: url(/img/course/course-5.png) no-repeat center center/cover;
+    background: url(/assets/img/course/course-5.png) no-repeat center
+      center/cover;
     left: 50%;
 
     @include global.mq("pc") {
