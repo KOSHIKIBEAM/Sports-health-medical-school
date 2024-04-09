@@ -44,8 +44,7 @@
 
   &::before {
     content: "";
-    background: url(./assets/img/course/back-left.png) no-repeat center
-      center/cover;
+    background: url(../img/course/back-left.png) no-repeat center center/cover;
     width: 269px;
     height: 245px;
     position: absolute;
@@ -66,7 +65,7 @@
 
   &::after {
     content: "";
-    background: url(./assets/img/course/back-bottom-right.png) no-repeat center
+    background: url(../img/course/back-bottom-right.png) no-repeat center
       center/cover;
     width: 269px;
     height: 245px;

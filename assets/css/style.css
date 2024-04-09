@@ -121,7 +121,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(./assets/img/top/bg.png) no-repeat center center/cover;
+  background: url(../img/top/bg.png) no-repeat center center/cover;
 }
 @media screen and (min-width: 1024px) {
   .l-top {
@@ -135,7 +135,7 @@ a:hover {
 }
 @media screen and (max-width: 599px) {
   .l-top {
-    background: url(./assets/img/top/bg-sp.png) no-repeat center center/cover;
+    background: url(../img/top/bg-sp.png) no-repeat center center/cover;
   }
 }
 
@@ -328,7 +328,7 @@ a:hover {
 }
 .l-course__wrap::before {
   content: "";
-  background: url(./assets/img/course/back-left.png) no-repeat center center/cover;
+  background: url(../img/course/back-left.png) no-repeat center center/cover;
   width: 269px;
   height: 245px;
   position: absolute;
@@ -352,7 +352,7 @@ a:hover {
 }
 .l-course__wrap::after {
   content: "";
-  background: url(./assets/img/course/back-bottom-right.png) no-repeat center center/cover;
+  background: url(../img/course/back-bottom-right.png) no-repeat center center/cover;
   width: 269px;
   height: 245px;
   position: absolute;
@@ -429,7 +429,7 @@ a:hover {
 @media screen and (max-width: 599px) {
   .c-section__ttl .person1,
   .c-section__ttl .person3 {
-    left: 86%;
+    left: 85%;
   }
 }
 .c-section__ttl .person2 {
@@ -1758,7 +1758,7 @@ a:hover {
 }
 
 .p-fee__txt {
-  background: url(./assets/img/fee/fee-bg.png) no-repeat center center/cover;
+  background: url(../img/fee/fee-bg.png) no-repeat center center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2559,7 +2559,7 @@ a:hover {
 }
 
 .course1::before {
-  background: url(./assets/img/course/course-1.png) no-repeat center center/cover;
+  background: url(../img/course/course-1.png) no-repeat center center/cover;
   left: 50%;
 }
 @media screen and (min-width: 1024px) {
@@ -2569,7 +2569,7 @@ a:hover {
 }
 
 .course2::before {
-  background: url(./assets/img/course/course-2.png) no-repeat center center/cover;
+  background: url(../img/course/course-2.png) no-repeat center center/cover;
 }
 @media screen and (min-width: 1024px) {
   .course2::before {
@@ -2578,7 +2578,7 @@ a:hover {
 }
 
 .course3::before {
-  background: url(./assets/img/course/course-3.png) no-repeat center center/cover;
+  background: url(../img/course/course-3.png) no-repeat center center/cover;
   left: 50%;
 }
 @media screen and (min-width: 1024px) {
@@ -2588,7 +2588,7 @@ a:hover {
 }
 
 .course4::before {
-  background: url(./assets/img/course/course-4.png) no-repeat center center/cover;
+  background: url(../img/course/course-4.png) no-repeat center center/cover;
 }
 @media screen and (min-width: 1024px) {
   .course4::before {
@@ -2597,7 +2597,7 @@ a:hover {
 }
 
 .course5::before {
-  background: url(./assets/img/course/course-5.png) no-repeat center center/cover;
+  background: url(../img/course/course-5.png) no-repeat center center/cover;
   left: 50%;
 }
 @media screen and (min-width: 1024px) {
